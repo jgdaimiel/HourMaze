@@ -21,15 +21,22 @@ public class HourMaze {
         Tablero tabInicial;
         
         Solucion.creaSolucion(tab);
-        tabInicial = Solucion.creaTableroInicial(tab);
-        
         System.out.print("\n");
         System.out.print("Tablero solucion: \n");
         tab.imprimeTablero();
         
+        
+        tabInicial = Solucion.creaTableroInicial(tab);
         System.out.print("\n");
-        System.out.print("Tablero inicial: \n");
+        System.out.print("Tablero final: \n");
         tabInicial.imprimeTablero();
+        
+        boolean exito = Solucion.resuelveTablero(tabInicial);
+        
+        if(exito)
+            System.out.print("Resuelto mediante algoritmo!!\n");
+        else
+            System.out.print("FAIL\n");
         
     }
     

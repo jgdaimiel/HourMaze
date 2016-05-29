@@ -6,7 +6,6 @@
 package hourmaze;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Random;
@@ -198,19 +197,21 @@ public class Solucion {
         tableroAuxiliar = Tablero.copiaMurosTablero(t);
         
         fijaValor(t, tableroInicial, tableroAuxiliar, true);
+        System.out.print("Tablero inicial: \n");
+        t.imprimeTablero();
+        //resuelveTablero(tableroAuxiliar);
         
-        resuelveTablero(tableroAuxiliar);
-        
-        /*resuelto = false;
+        resuelto = false;
         while(!resuelto){
             
             resuelto = resuelveTablero(tableroAuxiliar);
             
             if(!resuelto){
                 //fijamos un valor más
+                System.out.print("fijamos un valor más \n");
                 fijaValor(t, tableroInicial, tableroAuxiliar, false);
             }
-        }*/
+        }
         
         return tableroInicial;
     }
@@ -231,7 +232,7 @@ public class Solucion {
         boolean progreso = true;
         Celda celdaActual;
         
-        //**inicializa**
+        //**comienzo del proceso de inicialización**
         
         //usosRestantes con el máximo valor para cada elemento, y apariciones a cero
         for(int i=0;i<12;i++){
@@ -243,6 +244,7 @@ public class Solucion {
         for(int i=0;i<t.getFilas();i++){
             for(int j=0;j<t.getCol();j++){
                 if(tablero[i][j].getValor() != 0){
+                    tablero[i][j].getValoresPosibles().add(tablero[i][j].getValor());
                     celdasPorResolver--;
                     usosRestantes[tablero[i][j].getValor()-1]--;
                 }
@@ -255,7 +257,7 @@ public class Solucion {
             }
         }
               
-        //repasamos los usos restantes en caso de que uno esté agotado de inicio, si es así lo eliminamos de los conjuntos de valores posibles de las celdas
+        //repasamos los usos restantes por si uno de ellos está agotado de inicio, si es así, lo eliminamos de los conjuntos de valores posibles de todas las celdas
         for(int i=0;i<12;i++){
             if(usosRestantes[i] == 0){
                 eliminaValorAgotado(t,i+1);
@@ -266,22 +268,22 @@ public class Solucion {
         //**fin del proceso de inicialización**
         
         
-        //pruebas
-        System.out.println("Usos restantes:");
-        System.out.println(Arrays.toString(usosRestantes));
-        System.out.println("Apariciones:");
-        System.out.println(Arrays.toString(apariciones));
         
         //**bucle principal**
         while (progreso) {
             progreso = false;
             for (int i=0; i<t.getFilas(); i++) {
                 for (int j=0; j<t.getCol(); j++) {
+                    
+                    //System.out.print("Tablero actual: \n");
+                    //t.imprimeTablero();
+                    
                     celdaActual = tablero[i][j];
+                    //System.out.println("celda actual: (" + i + ", " + j + ")");
 
                     //si celdaActual no resuelta y tiene adyacente izquierda
                     if (celdaActual.getValor() == 0 && j > 0 && !celdaActual.isMuroIzquierda()) {
-                        progreso = progreso || comparaYElimina(celdaActual, tablero[i][j - 1], apariciones);
+                        progreso = comparaYElimina(celdaActual, tablero[i][j - 1], apariciones) || progreso;
                         
                         //comprobamos si nos ha quedado un solo elemento en el conjunto de valores posibles para esta celda, si es así resolvemos la celda
                         if (celdaActual.getValoresPosibles().size() == 1) {
@@ -289,9 +291,7 @@ public class Solucion {
                             celdasPorResolver--;
                             //asignamos el valor de la celda, quedando así marcada como resuelta
                             Iterator it = celdaActual.getValoresPosibles().iterator();
-                            celdaActual.setValor((int) it.next());
-                            //vaciamos el conjunto de valores posibles
-                            celdaActual.getValoresPosibles().clear();                            
+                            celdaActual.setValor((int) it.next());                         
                             //decrementamos en 1 los usos restantes del valor solución
                             usosRestantes[celdaActual.getValor()-1]--;
                             
@@ -310,13 +310,12 @@ public class Solucion {
                     }
                     //si celdaActual no resuelta y tiene adyacente derecha
                     if (celdaActual.getValor() == 0 && j < t.getCol() - 1 && !celdaActual.isMuroDerecha()) {
-                        progreso = progreso || comparaYElimina(celdaActual, tablero[i][j + 1], apariciones);
+                        progreso = comparaYElimina(celdaActual, tablero[i][j + 1], apariciones) || progreso;
                         if (celdaActual.getValoresPosibles().size() == 1) {
                             progreso = true;
                             celdasPorResolver--;
                             Iterator it = celdaActual.getValoresPosibles().iterator();
-                            celdaActual.setValor((int) it.next());
-                            celdaActual.getValoresPosibles().clear();                            
+                            celdaActual.setValor((int) it.next());                         
                             usosRestantes[celdaActual.getValor()-1]--;
                             
                             if(usosRestantes[celdaActual.getValor()-1] == 0){
@@ -331,13 +330,12 @@ public class Solucion {
                     }
                     //si celdaActual no resuelta y tiene adyacente arriba
                     if (celdaActual.getValor() == 0 && i > 0 && !celdaActual.isMuroArriba() ) {
-                        progreso = progreso || comparaYElimina(celdaActual, tablero[i - 1][j], apariciones);
+                        progreso = comparaYElimina(celdaActual, tablero[i - 1][j], apariciones) || progreso;
                         if (celdaActual.getValoresPosibles().size() == 1) {
                             progreso = true;
                             celdasPorResolver--;
                             Iterator it = celdaActual.getValoresPosibles().iterator();
-                            celdaActual.setValor((int) it.next());
-                            celdaActual.getValoresPosibles().clear();                            
+                            celdaActual.setValor((int) it.next());                          
                             usosRestantes[celdaActual.getValor()-1]--;
                             
                             if(usosRestantes[celdaActual.getValor()-1] == 0){
@@ -352,13 +350,12 @@ public class Solucion {
                     }
                     //si celdaActual no resuelta y tiene adyacente abajo
                     if (celdaActual.getValor() == 0 && i < t.getFilas() - 1 && !celdaActual.isMuroAbajo()) {
-                        progreso = progreso || comparaYElimina(celdaActual, tablero[i + 1][j], apariciones);
+                        progreso = comparaYElimina(celdaActual, tablero[i + 1][j], apariciones) || progreso;
                         if (celdaActual.getValoresPosibles().size() == 1) {
                             progreso = true;
                             celdasPorResolver--;
                             Iterator it = celdaActual.getValoresPosibles().iterator();
-                            celdaActual.setValor((int) it.next());
-                            celdaActual.getValoresPosibles().clear();                            
+                            celdaActual.setValor((int) it.next());                            
                             usosRestantes[celdaActual.getValor()-1]--;
                             
                             if(usosRestantes[celdaActual.getValor()-1] == 0){
@@ -409,8 +406,6 @@ public class Solucion {
                                             it.remove();
                                         }
                                     }
-                                    //al final nos quedara el conjunto con un solo elemento, la solución. Como ya está resuelta, limpiamos el conjunto
-                                    celda.getValoresPosibles().clear();
                                 }
                             }
                             c++;                            
@@ -515,6 +510,9 @@ public class Solucion {
             
             tabInicial[fila][columna].setValor(tabSolucion[fila][columna].getValor());
             tabAuxiliar[fila][columna].setValor(tabSolucion[fila][columna].getValor());
+            //limpiamos el conjunto de valores posibles de la celda del tablero auxiliar
+            //en caso de que estemos fijando un valor adicional
+            tabAuxiliar[fila][columna].getValoresPosibles().clear();
             
             arrayCoordenadas.remove(r);
         }
@@ -547,17 +545,18 @@ public class Solucion {
      */
     private static boolean comparaYElimina(Celda celdaActual, Celda celdaAdyacente, int[] apariciones) {
         boolean compatible;
-        HashSet<Integer> valoresActual = celdaActual.getValoresPosibles();
-        HashSet<Integer> valoresAdyacente = celdaAdyacente.getValoresPosibles();
-        Iterator<Integer> itActual = valoresActual.iterator();
-        Iterator<Integer> itAdyacente = valoresAdyacente.iterator();
+        Iterator<Integer> itActual;
+        Iterator<Integer> itAdyacente;
         boolean progreso = false;
         int a,b;
         
-        if(valoresAdyacente.size()<12){//Si la celda adyacente tiene los 12 valores en su conjunto, entonces los valores de la celda actual siempre van a ser compatibles con dos de ellos
+        if(celdaAdyacente.getValoresPosibles().size()<12){//Si la celda adyacente tiene los 12 valores en su conjunto,
+                                                           //entonces los valores de la celda actual siempre van a ser compatibles con dos de ellos
+            itActual = celdaActual.getValoresPosibles().iterator();
             while(itActual.hasNext()){
                 compatible = false;
                 a = itActual.next();
+                itAdyacente = celdaAdyacente.getValoresPosibles().iterator();
                 while(itAdyacente.hasNext() && !compatible){
                     b = itAdyacente.next();
                     compatible = esCompatible(a,b);
