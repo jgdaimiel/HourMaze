@@ -6,7 +6,6 @@
 package hourmaze;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Random;
 
@@ -192,6 +191,7 @@ public class Solucion {
     public static Tablero creaTableroInicial(Tablero t){
         Tablero tableroInicial, tableroAuxiliar;
         boolean resuelto;
+        int valoresAdicionales = 0;
         
         tableroInicial = Tablero.copiaMurosTablero(t);
         tableroAuxiliar = Tablero.copiaMurosTablero(t);
@@ -208,16 +208,17 @@ public class Solucion {
             
             if(!resuelto){
                 //fijamos un valor más
+                valoresAdicionales++;
                 System.out.print("fijamos un valor más \n");
                 fijaValor(t, tableroInicial, tableroAuxiliar, false);
             }
         }
         
+        System.out.print("total de valores adicionales: " + valoresAdicionales + "\n");
+        
         return tableroInicial;
     }
         
-    
-    
     
     /**
      * 
@@ -275,11 +276,7 @@ public class Solucion {
             for (int i=0; i<t.getFilas(); i++) {
                 for (int j=0; j<t.getCol(); j++) {
                     
-                    //System.out.print("Tablero actual: \n");
-                    //t.imprimeTablero();
-                    
                     celdaActual = tablero[i][j];
-                    //System.out.println("celda actual: (" + i + ", " + j + ")");
 
                     //si celdaActual no resuelta y tiene adyacente izquierda
                     if (celdaActual.getValor() == 0 && j > 0 && !celdaActual.isMuroIzquierda()) {
@@ -376,6 +373,8 @@ public class Solucion {
                 if(apariciones[i] == 1){
                     //el valor i+1 aparece solo en una celda, por tanto i+1 es la solución a dicha celda
                     int solucion = i+1;
+                    
+                   System.out.println("Apariciones de " + solucion + " = 1");
                    
                     boolean encontrado = false;
                     int f=0;
@@ -422,12 +421,7 @@ public class Solucion {
         return (celdasPorResolver == 0);
     }
     
-    
-    
-     private static void inicializa(){
-     } 
-    
-    
+       
     /*
     Método que limpia un tablero poniendo todas sus casilla a valor 0, pero conservando los muros.
     */

@@ -9,7 +9,7 @@ package hourmaze;
  *
  * @author joaquin
  */
-public class HourMaze {
+public class HourMaze_old {
 
     /**
      * @param args the command line arguments
