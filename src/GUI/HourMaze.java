@@ -35,31 +35,6 @@ public class HourMaze extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel24 = new javax.swing.JPanel();
-        jLabel24_00 = new javax.swing.JLabel();
-        jLabel24_01 = new javax.swing.JLabel();
-        jLabel24_02 = new javax.swing.JLabel();
-        jLabel24_03 = new javax.swing.JLabel();
-        jLabel24_04 = new javax.swing.JLabel();
-        jLabel24_05 = new javax.swing.JLabel();
-        jLabel24_10 = new javax.swing.JLabel();
-        jLabel24_11 = new javax.swing.JLabel();
-        jLabel24_12 = new javax.swing.JLabel();
-        jLabel24_13 = new javax.swing.JLabel();
-        jLabel24_14 = new javax.swing.JLabel();
-        jLabel24_15 = new javax.swing.JLabel();
-        jLabel24_20 = new javax.swing.JLabel();
-        jLabel24_21 = new javax.swing.JLabel();
-        jLabel24_22 = new javax.swing.JLabel();
-        jLabel24_23 = new javax.swing.JLabel();
-        jLabel24_24 = new javax.swing.JLabel();
-        jLabel24_25 = new javax.swing.JLabel();
-        jLabel24_30 = new javax.swing.JLabel();
-        jLabel24_31 = new javax.swing.JLabel();
-        jLabel24_32 = new javax.swing.JLabel();
-        jLabel24_33 = new javax.swing.JLabel();
-        jLabel24_34 = new javax.swing.JLabel();
-        jLabel24_35 = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
         jBasePanel = new javax.swing.JPanel();
         jPanelTablero = new javax.swing.JPanel();
@@ -136,11 +111,24 @@ public class HourMaze extends javax.swing.JFrame {
         jToggleButton11 = new javax.swing.JToggleButton();
         jToggleButton12 = new javax.swing.JToggleButton();
         jToggleButtonBorrar = new javax.swing.JToggleButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jButtonResuelveCelda = new javax.swing.JButton();
+        jButtonSolucion = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButtonGenera = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabelAyudaUsos = new javax.swing.JLabel();
+        jLabelUsos1 = new javax.swing.JLabel();
+        jLabelUsos2 = new javax.swing.JLabel();
+        jLabelUsos3 = new javax.swing.JLabel();
+        jLabelUsos4 = new javax.swing.JLabel();
+        jLabelUsos5 = new javax.swing.JLabel();
+        jLabelUsos6 = new javax.swing.JLabel();
+        jLabelUsos7 = new javax.swing.JLabel();
+        jLabelUsos8 = new javax.swing.JLabel();
+        jLabelUsos9 = new javax.swing.JLabel();
+        jLabelUsos10 = new javax.swing.JLabel();
+        jLabelUsos11 = new javax.swing.JLabel();
+        jLabelUsos12 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         HourMazeMenu = new javax.swing.JMenu();
         NuevoTableroMenu = new javax.swing.JMenu();
@@ -148,179 +136,10 @@ public class HourMaze extends javax.swing.JFrame {
         Item36 = new javax.swing.JMenuItem();
         Item48 = new javax.swing.JMenuItem();
         Item60 = new javax.swing.JMenuItem();
+        jMenuAyudas = new javax.swing.JMenu();
+        jMenuActivarAyuda = new javax.swing.JMenuItem();
+        jMenuDesactivarAyuda = new javax.swing.JMenuItem();
         InfoMenu = new javax.swing.JMenuItem();
-
-        jPanel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102), 3));
-        jPanel24.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel24.setLayout(new java.awt.GridLayout(4, 6));
-
-        jLabel24_00.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_00.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_00.setText("00");
-        jLabel24_00.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_00.setOpaque(true);
-        jPanel24.add(jLabel24_00);
-
-        jLabel24_01.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_01.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_01.setText("01");
-        jLabel24_01.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_01.setOpaque(true);
-        jPanel24.add(jLabel24_01);
-
-        jLabel24_02.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_02.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_02.setText("02");
-        jLabel24_02.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_02.setOpaque(true);
-        jPanel24.add(jLabel24_02);
-
-        jLabel24_03.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_03.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_03.setText("03");
-        jLabel24_03.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_03.setOpaque(true);
-        jPanel24.add(jLabel24_03);
-
-        jLabel24_04.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_04.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_04.setText("04");
-        jLabel24_04.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_04.setOpaque(true);
-        jPanel24.add(jLabel24_04);
-
-        jLabel24_05.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_05.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_05.setText("05");
-        jLabel24_05.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_05.setOpaque(true);
-        jPanel24.add(jLabel24_05);
-
-        jLabel24_10.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_10.setText("10");
-        jLabel24_10.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_10.setOpaque(true);
-        jPanel24.add(jLabel24_10);
-
-        jLabel24_11.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_11.setText("11");
-        jLabel24_11.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_11.setOpaque(true);
-        jPanel24.add(jLabel24_11);
-
-        jLabel24_12.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_12.setText("12");
-        jLabel24_12.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_12.setOpaque(true);
-        jPanel24.add(jLabel24_12);
-
-        jLabel24_13.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_13.setText("13");
-        jLabel24_13.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_13.setOpaque(true);
-        jPanel24.add(jLabel24_13);
-
-        jLabel24_14.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_14.setText("14");
-        jLabel24_14.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_14.setOpaque(true);
-        jPanel24.add(jLabel24_14);
-
-        jLabel24_15.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_15.setText("15");
-        jLabel24_15.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_15.setOpaque(true);
-        jPanel24.add(jLabel24_15);
-
-        jLabel24_20.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_20.setText("20");
-        jLabel24_20.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_20.setOpaque(true);
-        jPanel24.add(jLabel24_20);
-
-        jLabel24_21.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_21.setText("21");
-        jLabel24_21.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_21.setOpaque(true);
-        jPanel24.add(jLabel24_21);
-
-        jLabel24_22.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_22.setText("22");
-        jLabel24_22.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_22.setOpaque(true);
-        jPanel24.add(jLabel24_22);
-
-        jLabel24_23.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_23.setText("23");
-        jLabel24_23.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_23.setOpaque(true);
-        jPanel24.add(jLabel24_23);
-
-        jLabel24_24.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_24.setText("24");
-        jLabel24_24.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_24.setOpaque(true);
-        jPanel24.add(jLabel24_24);
-
-        jLabel24_25.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_25.setText("25");
-        jLabel24_25.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_25.setOpaque(true);
-        jPanel24.add(jLabel24_25);
-
-        jLabel24_30.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_30.setText("30");
-        jLabel24_30.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_30.setOpaque(true);
-        jPanel24.add(jLabel24_30);
-
-        jLabel24_31.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_31.setText("31");
-        jLabel24_31.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_31.setOpaque(true);
-        jPanel24.add(jLabel24_31);
-
-        jLabel24_32.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_32.setText("32");
-        jLabel24_32.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_32.setOpaque(true);
-        jPanel24.add(jLabel24_32);
-
-        jLabel24_33.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_33.setText("33");
-        jLabel24_33.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_33.setOpaque(true);
-        jPanel24.add(jLabel24_33);
-
-        jLabel24_34.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_34.setText("34");
-        jLabel24_34.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_34.setOpaque(true);
-        jPanel24.add(jLabel24_34);
-
-        jLabel24_35.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24_35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24_35.setText("35");
-        jLabel24_35.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 204, 204)));
-        jLabel24_35.setOpaque(true);
-        jPanel24.add(jLabel24_35);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -333,6 +152,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_00.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_00.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_00.setOpaque(true);
+        jLabel60_00.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_00MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_00);
 
         jLabel60_01.setBackground(new java.awt.Color(255, 255, 255));
@@ -341,6 +165,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_01.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_01.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_01.setOpaque(true);
+        jLabel60_01.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_01MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_01);
 
         jLabel60_02.setBackground(new java.awt.Color(255, 255, 255));
@@ -349,6 +178,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_02.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_02.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_02.setOpaque(true);
+        jLabel60_02.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_02MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_02);
 
         jLabel60_03.setBackground(new java.awt.Color(255, 255, 255));
@@ -357,6 +191,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_03.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_03.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_03.setOpaque(true);
+        jLabel60_03.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_03MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_03);
 
         jLabel60_04.setBackground(new java.awt.Color(255, 255, 255));
@@ -365,6 +204,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_04.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_04.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_04.setOpaque(true);
+        jLabel60_04.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_04MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_04);
 
         jLabel60_05.setBackground(new java.awt.Color(255, 255, 255));
@@ -373,6 +217,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_05.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_05.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_05.setOpaque(true);
+        jLabel60_05.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_05MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_05);
 
         jLabel60_06.setBackground(new java.awt.Color(255, 255, 255));
@@ -381,6 +230,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_06.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_06.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_06.setOpaque(true);
+        jLabel60_06.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_06MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_06);
 
         jLabel60_07.setBackground(new java.awt.Color(255, 255, 255));
@@ -389,6 +243,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_07.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_07.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_07.setOpaque(true);
+        jLabel60_07.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_07MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_07);
 
         jLabel60_08.setBackground(new java.awt.Color(255, 255, 255));
@@ -397,6 +256,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_08.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_08.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_08.setOpaque(true);
+        jLabel60_08.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_08MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_08);
 
         jLabel60_09.setBackground(new java.awt.Color(255, 255, 255));
@@ -405,6 +269,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_09.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_09.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_09.setOpaque(true);
+        jLabel60_09.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_09MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_09);
 
         jLabel60_10.setBackground(new java.awt.Color(255, 255, 255));
@@ -413,6 +282,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_10.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_10.setOpaque(true);
+        jLabel60_10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_10MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_10);
 
         jLabel60_11.setBackground(new java.awt.Color(255, 255, 255));
@@ -421,6 +295,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_11.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_11.setOpaque(true);
+        jLabel60_11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_11MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_11);
 
         jLabel60_12.setBackground(new java.awt.Color(255, 255, 255));
@@ -429,6 +308,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_12.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_12.setOpaque(true);
+        jLabel60_12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_12MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_12);
 
         jLabel60_13.setBackground(new java.awt.Color(255, 255, 255));
@@ -437,6 +321,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_13.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_13.setOpaque(true);
+        jLabel60_13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_13MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_13);
 
         jLabel60_14.setBackground(new java.awt.Color(255, 255, 255));
@@ -445,6 +334,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_14.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_14.setOpaque(true);
+        jLabel60_14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_14MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_14);
 
         jLabel60_15.setBackground(new java.awt.Color(255, 255, 255));
@@ -453,6 +347,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_15.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_15.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_15.setOpaque(true);
+        jLabel60_15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_15MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_15);
 
         jLabel60_16.setBackground(new java.awt.Color(255, 255, 255));
@@ -461,6 +360,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_16.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_16.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_16.setOpaque(true);
+        jLabel60_16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_16MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_16);
 
         jLabel60_17.setBackground(new java.awt.Color(255, 255, 255));
@@ -469,6 +373,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_17.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_17.setOpaque(true);
+        jLabel60_17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_17MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_17);
 
         jLabel60_18.setBackground(new java.awt.Color(255, 255, 255));
@@ -477,6 +386,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_18.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_18.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_18.setOpaque(true);
+        jLabel60_18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_18MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_18);
 
         jLabel60_19.setBackground(new java.awt.Color(255, 255, 255));
@@ -485,6 +399,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_19.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_19.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_19.setOpaque(true);
+        jLabel60_19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_19MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_19);
 
         jLabel60_20.setBackground(new java.awt.Color(255, 255, 255));
@@ -493,6 +412,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_20.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_20.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_20.setOpaque(true);
+        jLabel60_20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_20MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_20);
 
         jLabel60_21.setBackground(new java.awt.Color(255, 255, 255));
@@ -501,6 +425,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_21.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_21.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_21.setOpaque(true);
+        jLabel60_21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_21MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_21);
 
         jLabel60_22.setBackground(new java.awt.Color(255, 255, 255));
@@ -509,6 +438,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_22.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_22.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_22.setOpaque(true);
+        jLabel60_22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_22MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_22);
 
         jLabel60_23.setBackground(new java.awt.Color(255, 255, 255));
@@ -517,6 +451,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_23.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_23.setOpaque(true);
+        jLabel60_23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_23MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_23);
 
         jLabel60_24.setBackground(new java.awt.Color(255, 255, 255));
@@ -525,6 +464,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_24.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_24.setOpaque(true);
+        jLabel60_24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_24MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_24);
 
         jLabel60_25.setBackground(new java.awt.Color(255, 255, 255));
@@ -533,6 +477,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_25.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_25.setOpaque(true);
+        jLabel60_25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_25MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_25);
 
         jLabel60_26.setBackground(new java.awt.Color(255, 255, 255));
@@ -541,6 +490,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_26.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_26.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_26.setOpaque(true);
+        jLabel60_26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_26MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_26);
 
         jLabel60_27.setBackground(new java.awt.Color(255, 255, 255));
@@ -549,6 +503,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_27.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_27.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_27.setOpaque(true);
+        jLabel60_27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_27MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_27);
 
         jLabel60_28.setBackground(new java.awt.Color(255, 255, 255));
@@ -557,6 +516,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_28.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_28.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_28.setOpaque(true);
+        jLabel60_28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_28MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_28);
 
         jLabel60_29.setBackground(new java.awt.Color(255, 255, 255));
@@ -565,6 +529,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_29.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_29.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_29.setOpaque(true);
+        jLabel60_29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_29MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_29);
 
         jLabel60_30.setBackground(new java.awt.Color(255, 255, 255));
@@ -573,6 +542,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_30.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_30.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_30.setOpaque(true);
+        jLabel60_30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_30MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_30);
 
         jLabel60_31.setBackground(new java.awt.Color(255, 255, 255));
@@ -581,6 +555,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_31.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_31.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_31.setOpaque(true);
+        jLabel60_31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_31MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_31);
 
         jLabel60_32.setBackground(new java.awt.Color(255, 255, 255));
@@ -589,6 +568,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_32.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_32.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_32.setOpaque(true);
+        jLabel60_32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_32MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_32);
 
         jLabel60_33.setBackground(new java.awt.Color(255, 255, 255));
@@ -597,6 +581,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_33.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_33.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_33.setOpaque(true);
+        jLabel60_33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_33MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_33);
 
         jLabel60_34.setBackground(new java.awt.Color(255, 255, 255));
@@ -605,6 +594,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_34.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_34.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_34.setOpaque(true);
+        jLabel60_34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_34MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_34);
 
         jLabel60_35.setBackground(new java.awt.Color(255, 255, 255));
@@ -613,6 +607,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_35.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_35.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_35.setOpaque(true);
+        jLabel60_35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_35MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_35);
 
         jLabel60_36.setBackground(new java.awt.Color(255, 255, 255));
@@ -621,6 +620,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_36.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_36.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_36.setOpaque(true);
+        jLabel60_36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_36MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_36);
 
         jLabel60_37.setBackground(new java.awt.Color(255, 255, 255));
@@ -629,6 +633,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_37.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_37.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_37.setOpaque(true);
+        jLabel60_37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_37MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_37);
 
         jLabel60_38.setBackground(new java.awt.Color(255, 255, 255));
@@ -637,6 +646,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_38.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_38.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_38.setOpaque(true);
+        jLabel60_38.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_38MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_38);
 
         jLabel60_39.setBackground(new java.awt.Color(255, 255, 255));
@@ -645,6 +659,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_39.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_39.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_39.setOpaque(true);
+        jLabel60_39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_39MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_39);
 
         jLabel60_40.setBackground(new java.awt.Color(255, 255, 255));
@@ -653,6 +672,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_40.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_40.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_40.setOpaque(true);
+        jLabel60_40.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_40MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_40);
 
         jLabel60_41.setBackground(new java.awt.Color(255, 255, 255));
@@ -661,6 +685,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_41.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_41.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_41.setOpaque(true);
+        jLabel60_41.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_41MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_41);
 
         jLabel60_42.setBackground(new java.awt.Color(255, 255, 255));
@@ -669,6 +698,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_42.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_42.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_42.setOpaque(true);
+        jLabel60_42.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_42MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_42);
 
         jLabel60_43.setBackground(new java.awt.Color(255, 255, 255));
@@ -677,6 +711,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_43.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_43.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_43.setOpaque(true);
+        jLabel60_43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_43MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_43);
 
         jLabel60_44.setBackground(new java.awt.Color(255, 255, 255));
@@ -685,6 +724,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_44.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_44.setOpaque(true);
+        jLabel60_44.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_44MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_44);
 
         jLabel60_45.setBackground(new java.awt.Color(255, 255, 255));
@@ -693,6 +737,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_45.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_45.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_45.setOpaque(true);
+        jLabel60_45.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_45MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_45);
 
         jLabel60_46.setBackground(new java.awt.Color(255, 255, 255));
@@ -701,6 +750,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_46.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_46.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_46.setOpaque(true);
+        jLabel60_46.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_46MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_46);
 
         jLabel60_47.setBackground(new java.awt.Color(255, 255, 255));
@@ -709,6 +763,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_47.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_47.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_47.setOpaque(true);
+        jLabel60_47.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_47MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_47);
 
         jLabel60_48.setBackground(new java.awt.Color(255, 255, 255));
@@ -717,6 +776,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_48.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_48.setOpaque(true);
+        jLabel60_48.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_48MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_48);
 
         jLabel60_49.setBackground(new java.awt.Color(255, 255, 255));
@@ -725,6 +789,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_49.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_49.setOpaque(true);
+        jLabel60_49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_49MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_49);
 
         jLabel60_50.setBackground(new java.awt.Color(255, 255, 255));
@@ -733,6 +802,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_50.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_50.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_50.setOpaque(true);
+        jLabel60_50.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_50MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_50);
 
         jLabel60_51.setBackground(new java.awt.Color(255, 255, 255));
@@ -741,6 +815,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_51.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_51.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_51.setOpaque(true);
+        jLabel60_51.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_51MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_51);
 
         jLabel60_52.setBackground(new java.awt.Color(255, 255, 255));
@@ -749,6 +828,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_52.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_52.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_52.setOpaque(true);
+        jLabel60_52.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_52MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_52);
 
         jLabel60_53.setBackground(new java.awt.Color(255, 255, 255));
@@ -757,6 +841,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_53.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_53.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_53.setOpaque(true);
+        jLabel60_53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_53MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_53);
 
         jLabel60_54.setBackground(new java.awt.Color(255, 255, 255));
@@ -765,6 +854,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_54.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_54.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_54.setOpaque(true);
+        jLabel60_54.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_54MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_54);
 
         jLabel60_55.setBackground(new java.awt.Color(255, 255, 255));
@@ -773,6 +867,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_55.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_55.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_55.setOpaque(true);
+        jLabel60_55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_55MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_55);
 
         jLabel60_56.setBackground(new java.awt.Color(255, 255, 255));
@@ -781,6 +880,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_56.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_56.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_56.setOpaque(true);
+        jLabel60_56.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_56MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_56);
 
         jLabel60_57.setBackground(new java.awt.Color(255, 255, 255));
@@ -789,6 +893,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_57.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_57.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_57.setOpaque(true);
+        jLabel60_57.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_57MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_57);
 
         jLabel60_58.setBackground(new java.awt.Color(255, 255, 255));
@@ -797,6 +906,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_58.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_58.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_58.setOpaque(true);
+        jLabel60_58.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_58MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_58);
 
         jLabel60_59.setBackground(new java.awt.Color(255, 255, 255));
@@ -805,6 +919,11 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel60_59.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jLabel60_59.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel60_59.setOpaque(true);
+        jLabel60_59.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel60_59MouseClicked(evt);
+            }
+        });
         jPanelTablero.add(jLabel60_59);
 
         buttonGroup1.add(jToggleButton1);
@@ -913,12 +1032,26 @@ public class HourMaze extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Resolver Celda");
+        jButtonResuelveCelda.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButtonResuelveCelda.setText("Resolver Celda");
+        jButtonResuelveCelda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonResuelveCeldaActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Solución");
+        jButtonSolucion.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButtonSolucion.setText("Solución");
+        jButtonSolucion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSolucionActionPerformed(evt);
+            }
+        });
 
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButton3.setText("Comprobar");
 
+        jButtonGenera.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButtonGenera.setText("Generar Tablero");
         jButtonGenera.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -926,76 +1059,150 @@ public class HourMaze extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("pruebas");
+        jLabel1.setFont(new java.awt.Font("Andalus", 1, 36)); // NOI18N
+        jLabel1.setText("Hour Maze");
+
+        jLabelAyudaUsos.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabelAyudaUsos.setText("Debes usar cada valor 5 veces");
+
+        jLabelUsos1.setText("0");
+
+        jLabelUsos2.setText("0");
+
+        jLabelUsos3.setText("0");
+
+        jLabelUsos4.setText("0");
+
+        jLabelUsos5.setText("0");
+
+        jLabelUsos6.setText("0");
+
+        jLabelUsos7.setText("0");
+
+        jLabelUsos8.setText("0");
+
+        jLabelUsos9.setText("0");
+
+        jLabelUsos10.setText("0");
+        jLabelUsos10.setToolTipText("");
+
+        jLabelUsos11.setText("0");
+
+        jLabelUsos12.setText("0");
 
         javax.swing.GroupLayout jBasePanelLayout = new javax.swing.GroupLayout(jBasePanel);
         jBasePanel.setLayout(jBasePanelLayout);
         jBasePanelLayout.setHorizontalGroup(
             jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jBasePanelLayout.createSequentialGroup()
-                .addContainerGap(134, Short.MAX_VALUE)
-                .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanelTablero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jBasePanelLayout.createSequentialGroup()
+                .addGap(171, 171, 171)
+                .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jBasePanelLayout.createSequentialGroup()
                         .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jToggleButtonBorrar)
-                            .addComponent(jButtonGenera))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jToggleButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jToggleButton3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jButtonGenera, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jBasePanelLayout.createSequentialGroup()
+                                .addComponent(jToggleButtonBorrar)
+                                .addGap(26, 26, 26)
+                                .addComponent(jToggleButton1)))
                         .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jBasePanelLayout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addGap(91, 91, 91)
+                                .addComponent(jButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonResuelveCelda)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonSolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jBasePanelLayout.createSequentialGroup()
-                                .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jBasePanelLayout.createSequentialGroup()
-                                        .addComponent(jButton3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jBasePanelLayout.createSequentialGroup()
-                                        .addComponent(jToggleButton4)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jToggleButton5)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jToggleButton6)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jToggleButton7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jToggleButton8)))
-                                .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jBasePanelLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jToggleButton9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jToggleButton10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jToggleButton11)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jToggleButton12))
-                                    .addGroup(jBasePanelLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(15, 15, 15)))))
-                .addGap(138, 138, 138))
+                                        .addComponent(jToggleButton8))
+                                    .addComponent(jLabelAyudaUsos))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jToggleButton12))))
+                    .addGroup(jBasePanelLayout.createSequentialGroup()
+                        .addComponent(jPanelTablero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 9, Short.MAX_VALUE)))
+                .addGap(0, 149, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jBasePanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jBasePanelLayout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(399, 399, 399))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jBasePanelLayout.createSequentialGroup()
+                        .addComponent(jLabelUsos1)
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabelUsos2)
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabelUsos3)
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabelUsos4)
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabelUsos5)
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabelUsos6)
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabelUsos7)
+                        .addGap(40, 40, 40)
+                        .addComponent(jLabelUsos8)
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabelUsos9)
+                        .addGap(44, 44, 44)
+                        .addComponent(jLabelUsos10)
+                        .addGap(50, 50, 50)
+                        .addComponent(jLabelUsos11)
+                        .addGap(56, 56, 56)
+                        .addComponent(jLabelUsos12)
+                        .addGap(191, 191, 191))))
         );
         jBasePanelLayout.setVerticalGroup(
             jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jBasePanelLayout.createSequentialGroup()
-                .addGap(46, 46, 46)
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
                 .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonResuelveCelda, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonSolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonGenera, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addComponent(jLabelAyudaUsos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelUsos1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabelUsos2)
+                        .addComponent(jLabelUsos3)
+                        .addComponent(jLabelUsos4)
+                        .addComponent(jLabelUsos5)
+                        .addComponent(jLabelUsos6)
+                        .addComponent(jLabelUsos7)
+                        .addComponent(jLabelUsos8)
+                        .addComponent(jLabelUsos9)
+                        .addComponent(jLabelUsos10)
+                        .addComponent(jLabelUsos11)
+                        .addComponent(jLabelUsos12)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jToggleButton1)
                     .addComponent(jToggleButton2)
@@ -1053,6 +1260,26 @@ public class HourMaze extends javax.swing.JFrame {
 
         HourMazeMenu.add(NuevoTableroMenu);
 
+        jMenuAyudas.setText("Ayudas");
+
+        jMenuActivarAyuda.setText("Activar");
+        jMenuActivarAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuActivarAyudaActionPerformed(evt);
+            }
+        });
+        jMenuAyudas.add(jMenuActivarAyuda);
+
+        jMenuDesactivarAyuda.setText("Desactivar");
+        jMenuDesactivarAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuDesactivarAyudaActionPerformed(evt);
+            }
+        });
+        jMenuAyudas.add(jMenuDesactivarAyuda);
+
+        HourMazeMenu.add(jMenuAyudas);
+
         InfoMenu.setText("Acerca de");
         HourMazeMenu.add(InfoMenu);
 
@@ -1064,13 +1291,13 @@ public class HourMaze extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
+            .addGap(0, 1029, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jBasePanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 739, Short.MAX_VALUE)
+            .addGap(0, 773, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jBasePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -1110,68 +1337,352 @@ public class HourMaze extends javax.swing.JFrame {
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         valorPulsado = "1";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
         valorPulsado = "2";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
         valorPulsado = "3";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton3ActionPerformed
 
     private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
         valorPulsado = "4";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton4ActionPerformed
 
     private void jToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton5ActionPerformed
         valorPulsado = "5";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton5ActionPerformed
 
     private void jToggleButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton6ActionPerformed
         valorPulsado = "6";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton6ActionPerformed
 
     private void jToggleButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton7ActionPerformed
         valorPulsado = "7";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton7ActionPerformed
 
     private void jToggleButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton8ActionPerformed
         valorPulsado = "8";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton8ActionPerformed
 
     private void jToggleButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton9ActionPerformed
         valorPulsado = "9";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton9ActionPerformed
 
     private void jToggleButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton10ActionPerformed
         valorPulsado = "10";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton10ActionPerformed
 
     private void jToggleButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton11ActionPerformed
         valorPulsado = "11";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton11ActionPerformed
 
     private void jToggleButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton12ActionPerformed
         valorPulsado = "12";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
     }//GEN-LAST:event_jToggleButton12ActionPerformed
 
     private void jToggleButtonBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButtonBorrarActionPerformed
-        valorPulsado = "borrar";
-        jLabel1.setText("se ha pulsado: " + valorPulsado);
+        valorPulsado = "";
     }//GEN-LAST:event_jToggleButtonBorrarActionPerformed
+
+    private void jLabel60_00MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_00MouseClicked
+        actualizaCelda(jLabel60_00);
+    }//GEN-LAST:event_jLabel60_00MouseClicked
+
+    private void jLabel60_01MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_01MouseClicked
+        actualizaCelda(jLabel60_01);
+    }//GEN-LAST:event_jLabel60_01MouseClicked
+
+    private void jLabel60_02MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_02MouseClicked
+       actualizaCelda(jLabel60_02);
+    }//GEN-LAST:event_jLabel60_02MouseClicked
+
+    private void jLabel60_03MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_03MouseClicked
+       actualizaCelda(jLabel60_03);
+    }//GEN-LAST:event_jLabel60_03MouseClicked
+
+    private void jLabel60_04MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_04MouseClicked
+       actualizaCelda(jLabel60_04);
+    }//GEN-LAST:event_jLabel60_04MouseClicked
+
+    private void jLabel60_05MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_05MouseClicked
+       actualizaCelda(jLabel60_05);
+    }//GEN-LAST:event_jLabel60_05MouseClicked
+
+    private void jLabel60_06MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_06MouseClicked
+        actualizaCelda(jLabel60_06);
+    }//GEN-LAST:event_jLabel60_06MouseClicked
+
+    private void jLabel60_07MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_07MouseClicked
+        actualizaCelda(jLabel60_07);
+    }//GEN-LAST:event_jLabel60_07MouseClicked
+
+    private void jLabel60_08MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_08MouseClicked
+        actualizaCelda(jLabel60_08);
+    }//GEN-LAST:event_jLabel60_08MouseClicked
+
+    private void jLabel60_09MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_09MouseClicked
+        actualizaCelda(jLabel60_09);
+    }//GEN-LAST:event_jLabel60_09MouseClicked
+
+    private void jLabel60_10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_10MouseClicked
+        actualizaCelda(jLabel60_10);
+    }//GEN-LAST:event_jLabel60_10MouseClicked
+
+    private void jLabel60_11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_11MouseClicked
+        actualizaCelda(jLabel60_11);
+    }//GEN-LAST:event_jLabel60_11MouseClicked
+
+    private void jLabel60_12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_12MouseClicked
+        actualizaCelda(jLabel60_12);
+    }//GEN-LAST:event_jLabel60_12MouseClicked
+
+    private void jLabel60_13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_13MouseClicked
+        actualizaCelda(jLabel60_13);
+    }//GEN-LAST:event_jLabel60_13MouseClicked
+
+    private void jLabel60_14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_14MouseClicked
+        actualizaCelda(jLabel60_14);
+    }//GEN-LAST:event_jLabel60_14MouseClicked
+
+    private void jLabel60_15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_15MouseClicked
+        actualizaCelda(jLabel60_15);
+    }//GEN-LAST:event_jLabel60_15MouseClicked
+
+    private void jLabel60_16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_16MouseClicked
+        actualizaCelda(jLabel60_16);
+    }//GEN-LAST:event_jLabel60_16MouseClicked
+
+    private void jLabel60_17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_17MouseClicked
+        actualizaCelda(jLabel60_17);
+    }//GEN-LAST:event_jLabel60_17MouseClicked
+
+    private void jLabel60_18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_18MouseClicked
+        actualizaCelda(jLabel60_18);
+    }//GEN-LAST:event_jLabel60_18MouseClicked
+
+    private void jLabel60_19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_19MouseClicked
+        actualizaCelda(jLabel60_19);
+    }//GEN-LAST:event_jLabel60_19MouseClicked
+
+    private void jLabel60_20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_20MouseClicked
+        actualizaCelda(jLabel60_20);
+    }//GEN-LAST:event_jLabel60_20MouseClicked
+
+    private void jLabel60_21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_21MouseClicked
+        actualizaCelda(jLabel60_21);
+    }//GEN-LAST:event_jLabel60_21MouseClicked
+
+    private void jLabel60_22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_22MouseClicked
+        actualizaCelda(jLabel60_22);
+    }//GEN-LAST:event_jLabel60_22MouseClicked
+
+    private void jLabel60_23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_23MouseClicked
+        actualizaCelda(jLabel60_23);
+    }//GEN-LAST:event_jLabel60_23MouseClicked
+
+    private void jLabel60_24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_24MouseClicked
+        actualizaCelda(jLabel60_24);
+    }//GEN-LAST:event_jLabel60_24MouseClicked
+
+    private void jLabel60_25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_25MouseClicked
+        actualizaCelda(jLabel60_25);
+    }//GEN-LAST:event_jLabel60_25MouseClicked
+
+    private void jLabel60_26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_26MouseClicked
+        actualizaCelda(jLabel60_26);
+    }//GEN-LAST:event_jLabel60_26MouseClicked
+
+    private void jLabel60_27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_27MouseClicked
+        actualizaCelda(jLabel60_27);
+    }//GEN-LAST:event_jLabel60_27MouseClicked
+
+    private void jLabel60_28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_28MouseClicked
+        actualizaCelda(jLabel60_28);
+    }//GEN-LAST:event_jLabel60_28MouseClicked
+
+    private void jLabel60_29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_29MouseClicked
+        actualizaCelda(jLabel60_29);
+    }//GEN-LAST:event_jLabel60_29MouseClicked
+
+    private void jLabel60_30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_30MouseClicked
+        actualizaCelda(jLabel60_30);
+    }//GEN-LAST:event_jLabel60_30MouseClicked
+
+    private void jLabel60_31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_31MouseClicked
+        actualizaCelda(jLabel60_31);
+    }//GEN-LAST:event_jLabel60_31MouseClicked
+
+    private void jLabel60_32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_32MouseClicked
+        actualizaCelda(jLabel60_32);
+    }//GEN-LAST:event_jLabel60_32MouseClicked
+
+    private void jLabel60_33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_33MouseClicked
+        actualizaCelda(jLabel60_33);
+    }//GEN-LAST:event_jLabel60_33MouseClicked
+
+    private void jLabel60_34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_34MouseClicked
+        actualizaCelda(jLabel60_34);
+    }//GEN-LAST:event_jLabel60_34MouseClicked
+
+    private void jLabel60_35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_35MouseClicked
+        actualizaCelda(jLabel60_35);
+    }//GEN-LAST:event_jLabel60_35MouseClicked
+
+    private void jLabel60_36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_36MouseClicked
+        actualizaCelda(jLabel60_36);
+    }//GEN-LAST:event_jLabel60_36MouseClicked
+
+    private void jLabel60_37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_37MouseClicked
+        actualizaCelda(jLabel60_37);
+    }//GEN-LAST:event_jLabel60_37MouseClicked
+
+    private void jLabel60_38MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_38MouseClicked
+        actualizaCelda(jLabel60_38);
+    }//GEN-LAST:event_jLabel60_38MouseClicked
+
+    private void jLabel60_39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_39MouseClicked
+        actualizaCelda(jLabel60_39);
+    }//GEN-LAST:event_jLabel60_39MouseClicked
+
+    private void jLabel60_40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_40MouseClicked
+        actualizaCelda(jLabel60_40);
+    }//GEN-LAST:event_jLabel60_40MouseClicked
+
+    private void jLabel60_41MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_41MouseClicked
+        actualizaCelda(jLabel60_41);
+    }//GEN-LAST:event_jLabel60_41MouseClicked
+
+    private void jLabel60_42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_42MouseClicked
+        actualizaCelda(jLabel60_42);
+    }//GEN-LAST:event_jLabel60_42MouseClicked
+
+    private void jLabel60_43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_43MouseClicked
+        actualizaCelda(jLabel60_43);
+    }//GEN-LAST:event_jLabel60_43MouseClicked
+
+    private void jLabel60_44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_44MouseClicked
+        actualizaCelda(jLabel60_44);
+    }//GEN-LAST:event_jLabel60_44MouseClicked
+
+    private void jLabel60_45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_45MouseClicked
+        actualizaCelda(jLabel60_45);
+    }//GEN-LAST:event_jLabel60_45MouseClicked
+
+    private void jLabel60_46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_46MouseClicked
+        actualizaCelda(jLabel60_46);
+    }//GEN-LAST:event_jLabel60_46MouseClicked
+
+    private void jLabel60_47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_47MouseClicked
+        actualizaCelda(jLabel60_47);
+    }//GEN-LAST:event_jLabel60_47MouseClicked
+
+    private void jLabel60_48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_48MouseClicked
+        actualizaCelda(jLabel60_48);
+    }//GEN-LAST:event_jLabel60_48MouseClicked
+
+    private void jLabel60_49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_49MouseClicked
+        actualizaCelda(jLabel60_49);
+    }//GEN-LAST:event_jLabel60_49MouseClicked
+
+    private void jLabel60_50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_50MouseClicked
+        actualizaCelda(jLabel60_50);
+    }//GEN-LAST:event_jLabel60_50MouseClicked
+
+    private void jLabel60_51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_51MouseClicked
+        actualizaCelda(jLabel60_51);
+    }//GEN-LAST:event_jLabel60_51MouseClicked
+
+    private void jLabel60_52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_52MouseClicked
+        actualizaCelda(jLabel60_52);
+    }//GEN-LAST:event_jLabel60_52MouseClicked
+
+    private void jLabel60_53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_53MouseClicked
+        actualizaCelda(jLabel60_53);
+    }//GEN-LAST:event_jLabel60_53MouseClicked
+
+    private void jLabel60_54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_54MouseClicked
+        actualizaCelda(jLabel60_54);
+    }//GEN-LAST:event_jLabel60_54MouseClicked
+
+    private void jLabel60_55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_55MouseClicked
+        actualizaCelda(jLabel60_55);
+    }//GEN-LAST:event_jLabel60_55MouseClicked
+
+    private void jLabel60_56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_56MouseClicked
+        actualizaCelda(jLabel60_56);
+    }//GEN-LAST:event_jLabel60_56MouseClicked
+
+    private void jLabel60_57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_57MouseClicked
+        actualizaCelda(jLabel60_57);
+    }//GEN-LAST:event_jLabel60_57MouseClicked
+
+    private void jLabel60_58MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_58MouseClicked
+        actualizaCelda(jLabel60_58);
+    }//GEN-LAST:event_jLabel60_58MouseClicked
+
+    private void jLabel60_59MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_59MouseClicked
+        actualizaCelda(jLabel60_59);
+    }//GEN-LAST:event_jLabel60_59MouseClicked
+
+    private void jButtonSolucionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSolucionActionPerformed
+        int valor;
+        for(int i=0;i<tableroSolucion.getFilas();i++){
+            for(int j=0;j<tableroSolucion.getCol();j++){
+                if(tableroGUI[i][j].getBackground().equals(java.awt.Color.WHITE)){
+                    valor = tableroSolucion.getTablero()[i][j].getValor();
+                    tableroGUI[i][j].setText(Integer.toString(valor));
+                }
+            }
+        }
+        
+        for(int i=0;i<12;i++){
+            valoresUsados[i] = tam/12;
+        }
+        actualizaValoresUsadosGUI();
+    }//GEN-LAST:event_jButtonSolucionActionPerformed
+
+    private void jButtonResuelveCeldaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResuelveCeldaActionPerformed
+        boolean encontrado = false;
+        int i,j,valor;
+        //se busca la primera celda no resuelta, bien porque esté vacía o porque tenga un valor incorrecto
+        //una vez encontrada la celda se marca como resuelta y se muestra la solución
+        i=0;
+        while(i<tableroSolucion.getFilas() && !encontrado){
+            j=0;
+            while(j<tableroSolucion.getCol() && !encontrado){
+                valor = tableroSolucion.getTablero()[i][j].getValor();
+                if(tableroGUI[i][j].getText().compareTo("") == 0 || tableroGUI[i][j].getText().compareTo(Integer.toString(valor)) != 0){           
+                    encontrado = true;
+                    
+                    //actualizamos los valores usados que sirven de ayuda
+                    if(!tableroGUI[i][j].getText().isEmpty()){
+                        valoresUsados[Integer.parseInt(tableroGUI[i][j].getText())-1]--;
+                    }
+                    valoresUsados[valor-1]++;
+                    actualizaValoresUsadosGUI();
+                    
+                    tableroGUI[i][j].setText(Integer.toString(valor));
+                    
+                    //marcamos la casilla como resuelta por la máquina, y no se puede modificar
+                    tableroGUI[i][j].setBackground(java.awt.Color.LIGHT_GRAY);
+                    tableroGUI[i][j].setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+                }
+                j++;
+            }
+            i++;
+        }
+    }//GEN-LAST:event_jButtonResuelveCeldaActionPerformed
+
+    private void jMenuActivarAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuActivarAyudaActionPerformed
+        muestraAyuda(true);
+    }//GEN-LAST:event_jMenuActivarAyudaActionPerformed
+
+    private void jMenuDesactivarAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuDesactivarAyudaActionPerformed
+        muestraAyuda(false);
+    }//GEN-LAST:event_jMenuDesactivarAyudaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1184,7 +1695,7 @@ public class HourMaze extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -1218,35 +1729,11 @@ public class HourMaze extends javax.swing.JFrame {
     private javax.swing.JMenu NuevoTableroMenu;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JPanel jBasePanel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButtonGenera;
+    private javax.swing.JButton jButtonResuelveCelda;
+    private javax.swing.JButton jButtonSolucion;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel24_00;
-    private javax.swing.JLabel jLabel24_01;
-    private javax.swing.JLabel jLabel24_02;
-    private javax.swing.JLabel jLabel24_03;
-    private javax.swing.JLabel jLabel24_04;
-    private javax.swing.JLabel jLabel24_05;
-    private javax.swing.JLabel jLabel24_10;
-    private javax.swing.JLabel jLabel24_11;
-    private javax.swing.JLabel jLabel24_12;
-    private javax.swing.JLabel jLabel24_13;
-    private javax.swing.JLabel jLabel24_14;
-    private javax.swing.JLabel jLabel24_15;
-    private javax.swing.JLabel jLabel24_20;
-    private javax.swing.JLabel jLabel24_21;
-    private javax.swing.JLabel jLabel24_22;
-    private javax.swing.JLabel jLabel24_23;
-    private javax.swing.JLabel jLabel24_24;
-    private javax.swing.JLabel jLabel24_25;
-    private javax.swing.JLabel jLabel24_30;
-    private javax.swing.JLabel jLabel24_31;
-    private javax.swing.JLabel jLabel24_32;
-    private javax.swing.JLabel jLabel24_33;
-    private javax.swing.JLabel jLabel24_34;
-    private javax.swing.JLabel jLabel24_35;
     private javax.swing.JLabel jLabel60_00;
     private javax.swing.JLabel jLabel60_01;
     private javax.swing.JLabel jLabel60_02;
@@ -1307,8 +1794,23 @@ public class HourMaze extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel60_57;
     private javax.swing.JLabel jLabel60_58;
     private javax.swing.JLabel jLabel60_59;
+    private javax.swing.JLabel jLabelAyudaUsos;
+    private javax.swing.JLabel jLabelUsos1;
+    private javax.swing.JLabel jLabelUsos10;
+    private javax.swing.JLabel jLabelUsos11;
+    private javax.swing.JLabel jLabelUsos12;
+    private javax.swing.JLabel jLabelUsos2;
+    private javax.swing.JLabel jLabelUsos3;
+    private javax.swing.JLabel jLabelUsos4;
+    private javax.swing.JLabel jLabelUsos5;
+    private javax.swing.JLabel jLabelUsos6;
+    private javax.swing.JLabel jLabelUsos7;
+    private javax.swing.JLabel jLabelUsos8;
+    private javax.swing.JLabel jLabelUsos9;
+    private javax.swing.JMenuItem jMenuActivarAyuda;
+    private javax.swing.JMenu jMenuAyudas;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel24;
+    private javax.swing.JMenuItem jMenuDesactivarAyuda;
     private javax.swing.JPanel jPanelTablero;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton10;
@@ -1330,6 +1832,7 @@ public class HourMaze extends javax.swing.JFrame {
     private JLabel[][] tableroGUI;
     private int tam;
     private String valorPulsado;
+    private int[] valoresUsados;
     
     
     
@@ -1446,6 +1949,11 @@ public class HourMaze extends javax.swing.JFrame {
         tableroGUI[5][8] = jLabel60_58;
         tableroGUI[5][9] = jLabel60_59;
         tam = 60;
+        valorPulsado = "";
+        jButtonSolucion.setEnabled(false);
+        jButtonResuelveCelda.setEnabled(false);
+        valoresUsados = new int[12];
+        
         prepararTableroGUI(60);
     }
 
@@ -1453,6 +1961,8 @@ public class HourMaze extends javax.swing.JFrame {
         tableroSolucion = new Tablero(tam); 
         Solucion.creaSolucion(tableroSolucion);
         tableroInicial = Solucion.creaTableroInicial(tableroSolucion);
+        jButtonSolucion.setEnabled(true);
+        jButtonResuelveCelda.setEnabled(true);        
     }
     
     private void imprimeTableroGUI(Tablero t){
@@ -1469,7 +1979,9 @@ public class HourMaze extends javax.swing.JFrame {
                 muroDerecha = 1;
                 if(celda.getValor() != 0){
                     tableroGUI[i][j].setText(Integer.toString(celda.getValor()));
-                    tableroGUI[i][j].setBackground(new java.awt.Color(200, 200, 200));
+                    tableroGUI[i][j].setBackground(java.awt.Color.LIGHT_GRAY);
+                    tableroGUI[i][j].setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+                    valoresUsados[celda.getValor()-1]++;
                 }
                 if(celda.isMuroAbajo()){
                     muroAbajo = 4;
@@ -1486,17 +1998,72 @@ public class HourMaze extends javax.swing.JFrame {
                 tableroGUI[i][j].setBorder(javax.swing.BorderFactory.createMatteBorder(muroArriba, muroIzquierda, muroAbajo, muroDerecha, Color.DARK_GRAY));
             }
         }
+        actualizaValoresUsadosGUI();
     }
 
     private void limpiaTableroGUI() {
+        jButtonSolucion.setEnabled(false);
+        jButtonResuelveCelda.setEnabled(false);
         for(int i=0;i<6;i++){
             for(int j=0;j<10;j++){
                 tableroGUI[i][j].setText("");
-                tableroGUI[i][j].setBackground(Color.WHITE);
+                tableroGUI[i][j].setBackground(java.awt.Color.WHITE);
                 tableroGUI[i][j].setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, Color.DARK_GRAY));
+                tableroGUI[i][j].setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             }
         }
+        
+        for(int i=0;i<12;i++){
+            valoresUsados[i] = 0;
+        }
+        actualizaValoresUsadosGUI();
+        jLabelAyudaUsos.setText("Debes usar cada valor " + tam/12 + " veces");
     }
-    
+
+    private void actualizaValoresUsadosGUI() {
+        jLabelUsos1.setText(Integer.toString(valoresUsados[0]));
+        jLabelUsos2.setText(Integer.toString(valoresUsados[1]));
+        jLabelUsos3.setText(Integer.toString(valoresUsados[2]));
+        jLabelUsos4.setText(Integer.toString(valoresUsados[3]));
+        jLabelUsos5.setText(Integer.toString(valoresUsados[4]));
+        jLabelUsos6.setText(Integer.toString(valoresUsados[5]));
+        jLabelUsos7.setText(Integer.toString(valoresUsados[6]));
+        jLabelUsos8.setText(Integer.toString(valoresUsados[7]));
+        jLabelUsos9.setText(Integer.toString(valoresUsados[8]));
+        jLabelUsos10.setText(Integer.toString(valoresUsados[9]));
+        jLabelUsos11.setText(Integer.toString(valoresUsados[10]));
+        jLabelUsos12.setText(Integer.toString(valoresUsados[11]));
+    }
+
+    private void actualizaCelda(JLabel label) {
+        if(!(label.getBackground().equals(java.awt.Color.LIGHT_GRAY))){
+            
+            if(!label.getText().isEmpty()){
+                valoresUsados[Integer.parseInt(label.getText())-1]--;
+            }
+            if(!valorPulsado.isEmpty()){
+                valoresUsados[Integer.parseInt(valorPulsado)-1]++;
+            }
+            actualizaValoresUsadosGUI();
+            
+            label.setText(valorPulsado);
+        }
+    } 
+
+    private void muestraAyuda(boolean b) {
+        jLabelAyudaUsos.setVisible(b);
+        jLabelUsos1.setVisible(b);
+        jLabelUsos2.setVisible(b);
+        jLabelUsos3.setVisible(b);
+        jLabelUsos4.setVisible(b);
+        jLabelUsos5.setVisible(b);
+        jLabelUsos6.setVisible(b);
+        jLabelUsos7.setVisible(b);
+        jLabelUsos8.setVisible(b);
+        jLabelUsos9.setVisible(b);
+        jLabelUsos10.setVisible(b);
+        jLabelUsos11.setVisible(b);
+        jLabelUsos12.setVisible(b);
+    }
     
 }
