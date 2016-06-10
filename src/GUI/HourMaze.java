@@ -9,6 +9,7 @@ import hourmaze.Celda;
 import hourmaze.Solucion;
 import hourmaze.Tablero;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,6 +36,21 @@ public class HourMaze extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jDialogAbout = new javax.swing.JDialog();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel13 = new javax.swing.JLabel();
         jBasePanel = new javax.swing.JPanel();
         jPanelTablero = new javax.swing.JPanel();
         jLabel60_00 = new javax.swing.JLabel();
@@ -139,6 +155,121 @@ public class HourMaze extends javax.swing.JFrame {
         jMenuActivarAyuda = new javax.swing.JMenuItem();
         jMenuDesactivarAyuda = new javax.swing.JMenuItem();
         InfoMenu = new javax.swing.JMenuItem();
+
+        jDialogAbout.setTitle("Acerca De");
+        jDialogAbout.setAlwaysOnTop(true);
+        jDialogAbout.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        jDialogAbout.setType(java.awt.Window.Type.POPUP);
+        jDialogAbout.setBounds(0, 0, 990, 430);
+
+        jLabel2.setFont(new java.awt.Font("Batang", 1, 18)); // NOI18N
+        jLabel2.setText("Hour Maze");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setText("Hour Maze es un juego creado por Mike Reilly y Jenks Norwalk en 2007.");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel4.setText("El objetivo es rellenar las celdas en blanco con números del 1 al 12, cumpliendo las siguientes reglas:");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel5.setText("1. Dada una celda con un valor i, cada celda adyacente debe tener el valor i+1 ó i-1.");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setText("2. Cada valor ha de aparecer el mismo número de veces en el tablero, este número corresponde al tamaño del tablero dividido por 12.");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel7.setText("Por ejemplo, si en una celda hay un 2, cada celda adyacente a ésta debe tener un 1 ó un 3. Dos celdas separadas por un muro o en diagonal no son adyacentes.");
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setText("Para el juego se considera que 1 y 12 son consecutivos, con lo cual pueden ser adyacentes.");
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel9.setText("Por ejemplo, para un tablero de tamaño 24 cada valor solo puede aparecer 2 veces.");
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel10.setText("Para jugar selecciona un tamaño entre los 4 disponibles, pincha en uno de los números y luego en usa casilla para asignarle ese valor.");
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel11.setText("Si te quedas atascado utiliza los botones de 'Resuelve Una' para resolver una celda, o 'Solución' para ver el tablero resuelto.");
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel12.setText("Si necesitas un poco de ayuda, activa el sistema de ayudas desde el menú principal, podrás llevar la cuenta de los valores usado y ver los fallos.");
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel13.setText("https://sites.google.com/site/reilly4puzzles/");
+
+        javax.swing.GroupLayout jDialogAboutLayout = new javax.swing.GroupLayout(jDialogAbout.getContentPane());
+        jDialogAbout.getContentPane().setLayout(jDialogAboutLayout);
+        jDialogAboutLayout.setHorizontalGroup(
+            jDialogAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogAboutLayout.createSequentialGroup()
+                .addGap(0, 52, Short.MAX_VALUE)
+                .addGroup(jDialogAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addGroup(jDialogAboutLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jDialogAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel9)))
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12))
+                .addGap(42, 42, 42))
+            .addGroup(jDialogAboutLayout.createSequentialGroup()
+                .addGroup(jDialogAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDialogAboutLayout.createSequentialGroup()
+                        .addGap(425, 425, 425)
+                        .addComponent(jLabel2))
+                    .addGroup(jDialogAboutLayout.createSequentialGroup()
+                        .addGap(105, 105, 105)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jDialogAboutLayout.createSequentialGroup()
+                        .addGap(101, 101, 101)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 721, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jDialogAboutLayout.createSequentialGroup()
+                        .addGap(271, 271, 271)
+                        .addComponent(jLabel3))
+                    .addGroup(jDialogAboutLayout.createSequentialGroup()
+                        .addGap(368, 368, 368)
+                        .addComponent(jLabel13)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jDialogAboutLayout.setVerticalGroup(
+            jDialogAboutLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDialogAboutLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel12)
+                .addGap(37, 37, 37)
+                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel13)
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1032,7 +1163,7 @@ public class HourMaze extends javax.swing.JFrame {
         });
 
         jButtonResuelveCelda.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButtonResuelveCelda.setText("Resolver Celda");
+        jButtonResuelveCelda.setText("Resuelve Una");
         jButtonResuelveCelda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonResuelveCeldaActionPerformed(evt);
@@ -1048,7 +1179,7 @@ public class HourMaze extends javax.swing.JFrame {
         });
 
         jButtonVerFallos.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButtonVerFallos.setText("Comprobar");
+        jButtonVerFallos.setText("Ver Fallos");
         jButtonVerFallos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButtonVerFallosMousePressed(evt);
@@ -1171,14 +1302,7 @@ public class HourMaze extends javax.swing.JFrame {
                                 .addComponent(jToggleButtonBorrar)
                                 .addGap(26, 26, 26)
                                 .addComponent(jToggleButton1)))
-                        .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jBasePanelLayout.createSequentialGroup()
-                                .addGap(91, 91, 91)
-                                .addComponent(jButtonVerFallos)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonResuelveCelda)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonSolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jBasePanelLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jToggleButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1198,19 +1322,25 @@ public class HourMaze extends javax.swing.JFrame {
                                         .addComponent(jToggleButton8))
                                     .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addComponent(jLabelUsos8)
-                                        .addComponent(jLabelAyudaUsos)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabelAyudaUsos))))
+                            .addGroup(jBasePanelLayout.createSequentialGroup()
+                                .addGap(91, 91, 91)
+                                .addComponent(jButtonResuelveCelda)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButtonSolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jBasePanelLayout.createSequentialGroup()
                                 .addComponent(jToggleButton9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jToggleButton10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jToggleButton11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jToggleButton12))))
-                    .addGroup(jBasePanelLayout.createSequentialGroup()
-                        .addComponent(jPanelTablero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 9, Short.MAX_VALUE)))
-                .addGap(0, 149, Short.MAX_VALUE))
+                                .addComponent(jToggleButton12))
+                            .addComponent(jButtonVerFallos)))
+                    .addComponent(jPanelTablero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 158, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jBasePanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1250,8 +1380,8 @@ public class HourMaze extends javax.swing.JFrame {
                 .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonResuelveCelda, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonSolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonVerFallos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonGenera, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButtonGenera, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonVerFallos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addComponent(jLabelAyudaUsos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1348,6 +1478,11 @@ public class HourMaze extends javax.swing.JFrame {
         HourMazeMenu.add(jMenuAyudas);
 
         InfoMenu.setText("Acerca de");
+        InfoMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InfoMenuActionPerformed(evt);
+            }
+        });
         HourMazeMenu.add(InfoMenu);
 
         jMenuBar1.add(HourMazeMenu);
@@ -1714,6 +1849,10 @@ public class HourMaze extends javax.swing.JFrame {
     private void jButtonResuelveCeldaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResuelveCeldaActionPerformed
         boolean encontrado = false;
         int i,j,valor;
+        
+        //el jugador ha pedido ayuda
+        ayudas = true;
+        
         //se busca la primera celda no resuelta, bien porque esté vacía o porque tenga un valor incorrecto
         //una vez encontrada la celda se marca como resuelta y se muestra la solución
         i=0;
@@ -1749,7 +1888,6 @@ public class HourMaze extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuActivarAyudaActionPerformed
 
     private void jMenuDesactivarAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuDesactivarAyudaActionPerformed
-        ayudas = false;
         muestraAyuda(false);
     }//GEN-LAST:event_jMenuDesactivarAyudaActionPerformed
 
@@ -1802,6 +1940,7 @@ public class HourMaze extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabelUsos12PropertyChange
 
     private void jButtonVerFallosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonVerFallosMousePressed
+        if(tableroInicial != null){
         int a,b;
         Celda[][] tab = tableroInicial.getTablero();
         for(int i=0;i<tableroInicial.getFilas();i++){
@@ -1843,9 +1982,11 @@ public class HourMaze extends javax.swing.JFrame {
                 }
             }
         }
+        }
     }//GEN-LAST:event_jButtonVerFallosMousePressed
 
     private void jButtonVerFallosMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonVerFallosMouseReleased
+        if(tableroInicial != null){
         for(int i=0;i<tableroInicial.getFilas();i++){
             for(int j=0;j<tableroInicial.getCol();j++){
                 if(tableroGUI[i][j].getBackground().equals(new java.awt.Color(255, 140, 140))){
@@ -1853,7 +1994,13 @@ public class HourMaze extends javax.swing.JFrame {
                 }
             }
         }
+        }
     }//GEN-LAST:event_jButtonVerFallosMouseReleased
+
+    private void InfoMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoMenuActionPerformed
+        jDialogAbout.setLocationRelativeTo(this);
+        jDialogAbout.setVisible(true);
+    }//GEN-LAST:event_InfoMenuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1904,7 +2051,17 @@ public class HourMaze extends javax.swing.JFrame {
     private javax.swing.JButton jButtonResuelveCelda;
     private javax.swing.JButton jButtonSolucion;
     private javax.swing.JButton jButtonVerFallos;
+    private javax.swing.JDialog jDialogAbout;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60_00;
     private javax.swing.JLabel jLabel60_01;
     private javax.swing.JLabel jLabel60_02;
@@ -1965,6 +2122,9 @@ public class HourMaze extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel60_57;
     private javax.swing.JLabel jLabel60_58;
     private javax.swing.JLabel jLabel60_59;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelAyudaUsos;
     private javax.swing.JLabel jLabelUsos1;
     private javax.swing.JLabel jLabelUsos10;
@@ -1983,6 +2143,8 @@ public class HourMaze extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuDesactivarAyuda;
     private javax.swing.JPanel jPanelTablero;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton10;
     private javax.swing.JToggleButton jToggleButton11;
@@ -2136,7 +2298,7 @@ public class HourMaze extends javax.swing.JFrame {
         Solucion.creaSolucion(tableroSolucion);
         tableroInicial = Solucion.creaTableroInicial(tableroSolucion);
         jButtonSolucion.setEnabled(true);
-        jButtonResuelveCelda.setEnabled(true);        
+        jButtonResuelveCelda.setEnabled(true); 
     }
     
     private void imprimeTableroGUI(Tablero t){
@@ -2187,12 +2349,13 @@ public class HourMaze extends javax.swing.JFrame {
             }
         }
         
-        //resetea el sistema de ayuda de valores usados
+        //resetea el sistema de ayudas
         for(int i=0;i<12;i++){
             valoresUsados[i] = 0;
         }
         actualizaValoresUsadosGUI();
-        jLabelAyudaUsos.setText("Debes usar cada valor " + tam/12 + " veces");
+        jLabelAyudaUsos.setText("Debes usar cada valor " + tam/12 + " veces");      
+        ayudas = false;
     }
 
     private void actualizaValoresUsadosGUI() {
@@ -2222,6 +2385,12 @@ public class HourMaze extends javax.swing.JFrame {
             actualizaValoresUsadosGUI();
             
             label.setText(valorPulsado);
+            
+            //comprueba si se está jugando con el sistema de ayudas activado
+            if(jLabelAyudaUsos.isVisible()){
+                ayudas = true;
+            }            
+            compruebaSolucion();
         }
     } 
 
@@ -2248,6 +2417,37 @@ public class HourMaze extends javax.swing.JFrame {
         }
         else{
             label.setForeground(java.awt.Color.BLACK);
+        }
+    }
+
+    private void compruebaSolucion() {
+        if(tableroSolucion != null){
+        boolean resuelto = true;
+        int i,j;
+        i=0;
+        while(resuelto && i<tableroSolucion.getFilas()){
+            j=0;
+            while(resuelto && j<tableroSolucion.getCol()){
+                //si la celda no está prefijada de inicio
+                if(!tableroGUI[i][j].getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+                    //si la celda está vacía o tiene un valor incorrecto, 'resuelto' es falso
+                    resuelto = !tableroGUI[i][j].getText().isEmpty() && Integer.parseInt(tableroGUI[i][j].getText()) == tableroSolucion.getTablero()[i][j].getValor();
+                }
+                j++;
+            }
+            i++;
+        }
+        
+        if(resuelto){
+            String mensaje;
+            if(ayudas){
+                mensaje = "¡Enhorabuena!\nHas necesitado un poco de ayuda, pero lo has resuelto.";
+            }
+            else{
+                mensaje = "¡Genial!\nHas resuelto el tablero sin ninguna ayuda.";
+            } 
+            JOptionPane.showMessageDialog(this, mensaje);
+        }    
         }
     }
     
