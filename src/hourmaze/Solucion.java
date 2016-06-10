@@ -423,7 +423,7 @@ public class Solucion {
     
        
     /*
-    Método que limpia un tablero poniendo todas sus casilla a valor 0, pero conservando los muros.
+    Método que limpia un tablero poniendo todas sus casillas a valor 0, pero conservando los muros intactos.
     */
     public static void limpiaTablero(Tablero t){
         Celda[][] tablero = t.getTablero();

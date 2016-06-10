@@ -8,7 +8,6 @@ package GUI;
 import hourmaze.Celda;
 import hourmaze.Solucion;
 import hourmaze.Tablero;
-import java.awt.Color;
 import javax.swing.JLabel;
 
 /**
@@ -113,7 +112,7 @@ public class HourMaze extends javax.swing.JFrame {
         jToggleButtonBorrar = new javax.swing.JToggleButton();
         jButtonResuelveCelda = new javax.swing.JButton();
         jButtonSolucion = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButtonVerFallos = new javax.swing.JButton();
         jButtonGenera = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabelAyudaUsos = new javax.swing.JLabel();
@@ -1048,8 +1047,16 @@ public class HourMaze extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton3.setText("Comprobar");
+        jButtonVerFallos.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButtonVerFallos.setText("Comprobar");
+        jButtonVerFallos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jButtonVerFallosMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                jButtonVerFallosMouseReleased(evt);
+            }
+        });
 
         jButtonGenera.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jButtonGenera.setText("Generar Tablero");
@@ -1066,29 +1073,89 @@ public class HourMaze extends javax.swing.JFrame {
         jLabelAyudaUsos.setText("Debes usar cada valor 5 veces");
 
         jLabelUsos1.setText("0");
+        jLabelUsos1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos1PropertyChange(evt);
+            }
+        });
 
         jLabelUsos2.setText("0");
+        jLabelUsos2.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos2PropertyChange(evt);
+            }
+        });
 
         jLabelUsos3.setText("0");
+        jLabelUsos3.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos3PropertyChange(evt);
+            }
+        });
 
         jLabelUsos4.setText("0");
+        jLabelUsos4.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos4PropertyChange(evt);
+            }
+        });
 
         jLabelUsos5.setText("0");
+        jLabelUsos5.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos5PropertyChange(evt);
+            }
+        });
 
         jLabelUsos6.setText("0");
+        jLabelUsos6.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos6PropertyChange(evt);
+            }
+        });
 
         jLabelUsos7.setText("0");
+        jLabelUsos7.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos7PropertyChange(evt);
+            }
+        });
 
         jLabelUsos8.setText("0");
+        jLabelUsos8.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos8PropertyChange(evt);
+            }
+        });
 
         jLabelUsos9.setText("0");
+        jLabelUsos9.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos9PropertyChange(evt);
+            }
+        });
 
         jLabelUsos10.setText("0");
         jLabelUsos10.setToolTipText("");
+        jLabelUsos10.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos10PropertyChange(evt);
+            }
+        });
 
         jLabelUsos11.setText("0");
+        jLabelUsos11.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos11PropertyChange(evt);
+            }
+        });
 
         jLabelUsos12.setText("0");
+        jLabelUsos12.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                jLabelUsos12PropertyChange(evt);
+            }
+        });
 
         javax.swing.GroupLayout jBasePanelLayout = new javax.swing.GroupLayout(jBasePanel);
         jBasePanel.setLayout(jBasePanelLayout);
@@ -1107,7 +1174,7 @@ public class HourMaze extends javax.swing.JFrame {
                         .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jBasePanelLayout.createSequentialGroup()
                                 .addGap(91, 91, 91)
-                                .addComponent(jButton3)
+                                .addComponent(jButtonVerFallos)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jButtonResuelveCelda)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1129,7 +1196,9 @@ public class HourMaze extends javax.swing.JFrame {
                                         .addComponent(jToggleButton7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jToggleButton8))
-                                    .addComponent(jLabelAyudaUsos))
+                                    .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabelUsos8)
+                                        .addComponent(jLabelAyudaUsos)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jToggleButton9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1162,15 +1231,13 @@ public class HourMaze extends javax.swing.JFrame {
                         .addComponent(jLabelUsos6)
                         .addGap(43, 43, 43)
                         .addComponent(jLabelUsos7)
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabelUsos8)
-                        .addGap(43, 43, 43)
+                        .addGap(93, 93, 93)
                         .addComponent(jLabelUsos9)
-                        .addGap(44, 44, 44)
+                        .addGap(45, 45, 45)
                         .addComponent(jLabelUsos10)
-                        .addGap(50, 50, 50)
+                        .addGap(49, 49, 49)
                         .addComponent(jLabelUsos11)
-                        .addGap(56, 56, 56)
+                        .addGap(52, 52, 52)
                         .addComponent(jLabelUsos12)
                         .addGap(191, 191, 191))))
         );
@@ -1183,7 +1250,7 @@ public class HourMaze extends javax.swing.JFrame {
                 .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonResuelveCelda, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonSolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonVerFallos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonGenera, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addComponent(jLabelAyudaUsos)
@@ -1677,12 +1744,116 @@ public class HourMaze extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonResuelveCeldaActionPerformed
 
     private void jMenuActivarAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuActivarAyudaActionPerformed
+        ayudas = true;
         muestraAyuda(true);
     }//GEN-LAST:event_jMenuActivarAyudaActionPerformed
 
     private void jMenuDesactivarAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuDesactivarAyudaActionPerformed
+        ayudas = false;
         muestraAyuda(false);
     }//GEN-LAST:event_jMenuDesactivarAyudaActionPerformed
+
+    private void jLabelUsos1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos1PropertyChange
+        compruebaLimiteUsos(jLabelUsos1);
+    }//GEN-LAST:event_jLabelUsos1PropertyChange
+
+    private void jLabelUsos2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos2PropertyChange
+        compruebaLimiteUsos(jLabelUsos2);
+    }//GEN-LAST:event_jLabelUsos2PropertyChange
+
+    private void jLabelUsos3PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos3PropertyChange
+        compruebaLimiteUsos(jLabelUsos3);
+    }//GEN-LAST:event_jLabelUsos3PropertyChange
+
+    private void jLabelUsos4PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos4PropertyChange
+        compruebaLimiteUsos(jLabelUsos4);
+    }//GEN-LAST:event_jLabelUsos4PropertyChange
+
+    private void jLabelUsos5PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos5PropertyChange
+        compruebaLimiteUsos(jLabelUsos5);
+    }//GEN-LAST:event_jLabelUsos5PropertyChange
+
+    private void jLabelUsos6PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos6PropertyChange
+        compruebaLimiteUsos(jLabelUsos6);
+    }//GEN-LAST:event_jLabelUsos6PropertyChange
+
+    private void jLabelUsos7PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos7PropertyChange
+        compruebaLimiteUsos(jLabelUsos7);
+    }//GEN-LAST:event_jLabelUsos7PropertyChange
+
+    private void jLabelUsos8PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos8PropertyChange
+        compruebaLimiteUsos(jLabelUsos8);
+    }//GEN-LAST:event_jLabelUsos8PropertyChange
+
+    private void jLabelUsos9PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos9PropertyChange
+        compruebaLimiteUsos(jLabelUsos9);
+    }//GEN-LAST:event_jLabelUsos9PropertyChange
+
+    private void jLabelUsos10PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos10PropertyChange
+        compruebaLimiteUsos(jLabelUsos10);
+    }//GEN-LAST:event_jLabelUsos10PropertyChange
+
+    private void jLabelUsos11PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos11PropertyChange
+        compruebaLimiteUsos(jLabelUsos11);
+    }//GEN-LAST:event_jLabelUsos11PropertyChange
+
+    private void jLabelUsos12PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jLabelUsos12PropertyChange
+        compruebaLimiteUsos(jLabelUsos12);
+    }//GEN-LAST:event_jLabelUsos12PropertyChange
+
+    private void jButtonVerFallosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonVerFallosMousePressed
+        int a,b;
+        Celda[][] tab = tableroInicial.getTablero();
+        for(int i=0;i<tableroInicial.getFilas();i++){
+            for(int j=0;j<tableroInicial.getCol();j++){
+                
+                //si la celda no está prefijada de inicio y no está vacía
+                if(!tableroGUI[i][j].getBackground().equals(java.awt.Color.LIGHT_GRAY) && !tableroGUI[i][j].getText().isEmpty()){
+                    //guardamos el valor de la celda actual en 'a'
+                    a = Integer.parseInt(tableroGUI[i][j].getText());
+                    
+                    //si tiene adyacente izquierda y no está vacía
+                    if(j>0 && !tab[i][j].isMuroIzquierda() && !tableroGUI[i][j-1].getText().isEmpty()){
+                        b = Integer.parseInt(tableroGUI[i][j-1].getText());
+                        if(!Solucion.esCompatible(a, b)){
+                            tableroGUI[i][j].setBackground(new java.awt.Color(255, 140, 140));
+                        }
+                    }
+                    //si tiene adyacente derecha y no está vacía
+                    if(j<tableroInicial.getCol()-1 && !tab[i][j].isMuroDerecha() && !tableroGUI[i][j+1].getText().isEmpty()){
+                        b = Integer.parseInt(tableroGUI[i][j+1].getText());
+                        if(!Solucion.esCompatible(a, b)){
+                            tableroGUI[i][j].setBackground(new java.awt.Color(255, 140, 140));
+                        }
+                    }  
+                    //si tiene adyacente arriba y no está vacía
+                    if(i>0 && !tab[i][j].isMuroArriba() && !tableroGUI[i-1][j].getText().isEmpty()){
+                        b = Integer.parseInt(tableroGUI[i-1][j].getText());
+                        if(!Solucion.esCompatible(a, b)){
+                            tableroGUI[i][j].setBackground(new java.awt.Color(255, 140, 140));
+                        }
+                    }
+                    //si tiene adyacente abajo y no está vacía
+                    if(i<tableroInicial.getFilas()-1 && !tab[i][j].isMuroAbajo() && !tableroGUI[i+1][j].getText().isEmpty()){
+                        b = Integer.parseInt(tableroGUI[i+1][j].getText());
+                        if(!Solucion.esCompatible(a, b)){
+                            tableroGUI[i][j].setBackground(new java.awt.Color(255, 140, 140));
+                        }
+                    }
+                }
+            }
+        }
+    }//GEN-LAST:event_jButtonVerFallosMousePressed
+
+    private void jButtonVerFallosMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonVerFallosMouseReleased
+        for(int i=0;i<tableroInicial.getFilas();i++){
+            for(int j=0;j<tableroInicial.getCol();j++){
+                if(tableroGUI[i][j].getBackground().equals(new java.awt.Color(255, 140, 140))){
+                    tableroGUI[i][j].setBackground(java.awt.Color.WHITE);
+                }
+            }
+        }
+    }//GEN-LAST:event_jButtonVerFallosMouseReleased
 
     /**
      * @param args the command line arguments
@@ -1729,10 +1900,10 @@ public class HourMaze extends javax.swing.JFrame {
     private javax.swing.JMenu NuevoTableroMenu;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JPanel jBasePanel;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButtonGenera;
     private javax.swing.JButton jButtonResuelveCelda;
     private javax.swing.JButton jButtonSolucion;
+    private javax.swing.JButton jButtonVerFallos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel60_00;
     private javax.swing.JLabel jLabel60_01;
@@ -1833,6 +2004,7 @@ public class HourMaze extends javax.swing.JFrame {
     private int tam;
     private String valorPulsado;
     private int[] valoresUsados;
+    private boolean ayudas;
     
     
     
@@ -1952,6 +2124,8 @@ public class HourMaze extends javax.swing.JFrame {
         valorPulsado = "";
         jButtonSolucion.setEnabled(false);
         jButtonResuelveCelda.setEnabled(false);
+        ayudas = false;
+        muestraAyuda(false);
         valoresUsados = new int[12];
         
         prepararTableroGUI(60);
@@ -1995,7 +2169,7 @@ public class HourMaze extends javax.swing.JFrame {
                 if(celda.isMuroIzquierda()){
                     muroIzquierda = 4;
                 }
-                tableroGUI[i][j].setBorder(javax.swing.BorderFactory.createMatteBorder(muroArriba, muroIzquierda, muroAbajo, muroDerecha, Color.DARK_GRAY));
+                tableroGUI[i][j].setBorder(javax.swing.BorderFactory.createMatteBorder(muroArriba, muroIzquierda, muroAbajo, muroDerecha, java.awt.Color.DARK_GRAY));
             }
         }
         actualizaValoresUsadosGUI();
@@ -2008,11 +2182,12 @@ public class HourMaze extends javax.swing.JFrame {
             for(int j=0;j<10;j++){
                 tableroGUI[i][j].setText("");
                 tableroGUI[i][j].setBackground(java.awt.Color.WHITE);
-                tableroGUI[i][j].setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, Color.DARK_GRAY));
+                tableroGUI[i][j].setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, java.awt.Color.DARK_GRAY));
                 tableroGUI[i][j].setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
             }
         }
         
+        //resetea el sistema de ayuda de valores usados
         for(int i=0;i<12;i++){
             valoresUsados[i] = 0;
         }
@@ -2051,6 +2226,7 @@ public class HourMaze extends javax.swing.JFrame {
     } 
 
     private void muestraAyuda(boolean b) {
+        jButtonVerFallos.setVisible(b);
         jLabelAyudaUsos.setVisible(b);
         jLabelUsos1.setVisible(b);
         jLabelUsos2.setVisible(b);
@@ -2064,6 +2240,15 @@ public class HourMaze extends javax.swing.JFrame {
         jLabelUsos10.setVisible(b);
         jLabelUsos11.setVisible(b);
         jLabelUsos12.setVisible(b);
+    }
+
+    private void compruebaLimiteUsos(JLabel label) {
+        if(Integer.parseInt(label.getText()) > tam/12){
+            label.setForeground(java.awt.Color.RED);
+        }
+        else{
+            label.setForeground(java.awt.Color.BLACK);
+        }
     }
     
 }
