@@ -178,22 +178,22 @@ public class HourMaze extends javax.swing.JFrame {
         jLabel6.setText("2. Cada valor ha de aparecer el mismo número de veces en el tablero, este número corresponde al tamaño del tablero dividido por 12.");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel7.setText("Por ejemplo, si en una celda hay un 2, cada celda adyacente a ésta debe tener un 1 ó un 3. Dos celdas separadas por un muro o en diagonal no son adyacentes.");
+        jLabel7.setText("Por ejemplo, si en una celda hay un 2, cada celda adyacente a ésta debe tener un 1 o un 3. Dos celdas separadas por un muro o en diagonal no son adyacentes.");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel8.setText("Para el juego se considera que 1 y 12 son consecutivos, con lo cual pueden ser adyacentes.");
+        jLabel8.setText("En el juego se considera que 1 y 12 son consecutivos, con lo cual pueden ser adyacentes.");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel9.setText("Por ejemplo, para un tablero de tamaño 24 cada valor solo puede aparecer 2 veces.");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel10.setText("Para jugar selecciona un tamaño entre los 4 disponibles, pincha en uno de los números y luego en usa casilla para asignarle ese valor.");
+        jLabel10.setText("Para jugar selecciona un tamaño entre los 4 disponibles, haz click en uno de los números y luego en una celda para asignarle ese valor.");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("Si te quedas atascado utiliza los botones de 'Resuelve Una' para resolver una celda, o 'Solución' para ver el tablero resuelto.");
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel12.setText("Si necesitas un poco de ayuda, activa el sistema de ayudas desde el menú principal, podrás llevar la cuenta de los valores usado y ver los fallos.");
+        jLabel12.setText("Si necesitas un poco de ayuda, activa el sistema de ayudas desde el menú principal, podrás llevar la cuenta de los valores usados y ver los fallos.");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel13.setText("https://sites.google.com/site/reilly4puzzles/");
@@ -272,6 +272,7 @@ public class HourMaze extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanelTablero.setPreferredSize(new java.awt.Dimension(700, 450));
         jPanelTablero.setLayout(new java.awt.GridLayout(6, 10));
@@ -1830,6 +1831,9 @@ public class HourMaze extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel60_59MouseClicked
 
     private void jButtonSolucionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSolucionActionPerformed
+        //el jugador ha pedido ayuda
+        ayudas = true;
+        
         int valor;
         for(int i=0;i<tableroSolucion.getFilas();i++){
             for(int j=0;j<tableroSolucion.getCol();j++){
