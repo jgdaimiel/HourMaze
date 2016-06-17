@@ -1591,248 +1591,669 @@ public class HourMaze extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButtonBorrarActionPerformed
 
     private void jLabel60_00MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_00MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][0].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_00);
     }//GEN-LAST:event_jLabel60_00MouseClicked
 
     private void jLabel60_01MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_01MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][1].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_01);
     }//GEN-LAST:event_jLabel60_01MouseClicked
 
     private void jLabel60_02MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_02MouseClicked
-       actualizaCelda(jLabel60_02);
+       if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][2].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
+        actualizaCelda(jLabel60_02);
     }//GEN-LAST:event_jLabel60_02MouseClicked
 
     private void jLabel60_03MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_03MouseClicked
-       actualizaCelda(jLabel60_03);
+       if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][3].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
+        actualizaCelda(jLabel60_03);
     }//GEN-LAST:event_jLabel60_03MouseClicked
 
     private void jLabel60_04MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_04MouseClicked
-       actualizaCelda(jLabel60_04);
+       if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][4].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
+        actualizaCelda(jLabel60_04);
     }//GEN-LAST:event_jLabel60_04MouseClicked
 
     private void jLabel60_05MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_05MouseClicked
-       actualizaCelda(jLabel60_05);
+       if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][5].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
+        actualizaCelda(jLabel60_05);
     }//GEN-LAST:event_jLabel60_05MouseClicked
 
     private void jLabel60_06MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_06MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][6].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_06);
     }//GEN-LAST:event_jLabel60_06MouseClicked
 
     private void jLabel60_07MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_07MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][7].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_07);
     }//GEN-LAST:event_jLabel60_07MouseClicked
 
     private void jLabel60_08MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_08MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][8].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_08);
     }//GEN-LAST:event_jLabel60_08MouseClicked
 
     private void jLabel60_09MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_09MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[0][9].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_09);
     }//GEN-LAST:event_jLabel60_09MouseClicked
 
     private void jLabel60_10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_10MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][0].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_10);
     }//GEN-LAST:event_jLabel60_10MouseClicked
 
     private void jLabel60_11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_11MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][1].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_11);
     }//GEN-LAST:event_jLabel60_11MouseClicked
 
     private void jLabel60_12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_12MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][2].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_12);
     }//GEN-LAST:event_jLabel60_12MouseClicked
 
     private void jLabel60_13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_13MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][3].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_13);
     }//GEN-LAST:event_jLabel60_13MouseClicked
 
     private void jLabel60_14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_14MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][4].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_14);
     }//GEN-LAST:event_jLabel60_14MouseClicked
 
     private void jLabel60_15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_15MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][5].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_15);
     }//GEN-LAST:event_jLabel60_15MouseClicked
 
     private void jLabel60_16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_16MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][6].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_16);
     }//GEN-LAST:event_jLabel60_16MouseClicked
 
     private void jLabel60_17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_17MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][7].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_17);
     }//GEN-LAST:event_jLabel60_17MouseClicked
 
     private void jLabel60_18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_18MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][8].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_18);
     }//GEN-LAST:event_jLabel60_18MouseClicked
 
     private void jLabel60_19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_19MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[1][9].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_19);
     }//GEN-LAST:event_jLabel60_19MouseClicked
 
     private void jLabel60_20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_20MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][0].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }
+        }
         actualizaCelda(jLabel60_20);
     }//GEN-LAST:event_jLabel60_20MouseClicked
 
     private void jLabel60_21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_21MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][1].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_21);
     }//GEN-LAST:event_jLabel60_21MouseClicked
 
     private void jLabel60_22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_22MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][2].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_22);
     }//GEN-LAST:event_jLabel60_22MouseClicked
 
     private void jLabel60_23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_23MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][3].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_23);
     }//GEN-LAST:event_jLabel60_23MouseClicked
 
     private void jLabel60_24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_24MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][4].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_24);
     }//GEN-LAST:event_jLabel60_24MouseClicked
 
     private void jLabel60_25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_25MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][5].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_25);
     }//GEN-LAST:event_jLabel60_25MouseClicked
 
     private void jLabel60_26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_26MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][6].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_26);
     }//GEN-LAST:event_jLabel60_26MouseClicked
 
     private void jLabel60_27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_27MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][7].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_27);
     }//GEN-LAST:event_jLabel60_27MouseClicked
 
     private void jLabel60_28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_28MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][8].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_28);
     }//GEN-LAST:event_jLabel60_28MouseClicked
 
     private void jLabel60_29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_29MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[2][9].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_29);
     }//GEN-LAST:event_jLabel60_29MouseClicked
 
     private void jLabel60_30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_30MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][0].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_30);
     }//GEN-LAST:event_jLabel60_30MouseClicked
 
     private void jLabel60_31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_31MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][1].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_31);
     }//GEN-LAST:event_jLabel60_31MouseClicked
 
     private void jLabel60_32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_32MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][2].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_32);
     }//GEN-LAST:event_jLabel60_32MouseClicked
 
     private void jLabel60_33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_33MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][3].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_33);
     }//GEN-LAST:event_jLabel60_33MouseClicked
 
     private void jLabel60_34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_34MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][4].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_34);
     }//GEN-LAST:event_jLabel60_34MouseClicked
 
     private void jLabel60_35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_35MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][4].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_35);
     }//GEN-LAST:event_jLabel60_35MouseClicked
 
     private void jLabel60_36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_36MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][6].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_36);
     }//GEN-LAST:event_jLabel60_36MouseClicked
 
     private void jLabel60_37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_37MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][7].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_37);
     }//GEN-LAST:event_jLabel60_37MouseClicked
 
     private void jLabel60_38MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_38MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][8].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_38);
     }//GEN-LAST:event_jLabel60_38MouseClicked
 
     private void jLabel60_39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_39MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][9].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_39);
     }//GEN-LAST:event_jLabel60_39MouseClicked
 
     private void jLabel60_40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_40MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][0].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_40);
     }//GEN-LAST:event_jLabel60_40MouseClicked
 
     private void jLabel60_41MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_41MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][1].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_41);
     }//GEN-LAST:event_jLabel60_41MouseClicked
 
     private void jLabel60_42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_42MouseClicked
+       if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][2].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_42);
     }//GEN-LAST:event_jLabel60_42MouseClicked
 
     private void jLabel60_43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_43MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][3].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_43);
     }//GEN-LAST:event_jLabel60_43MouseClicked
 
     private void jLabel60_44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_44MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][4].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_44);
     }//GEN-LAST:event_jLabel60_44MouseClicked
 
     private void jLabel60_45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_45MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][5].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_45);
     }//GEN-LAST:event_jLabel60_45MouseClicked
 
     private void jLabel60_46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_46MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][6].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_46);
     }//GEN-LAST:event_jLabel60_46MouseClicked
 
     private void jLabel60_47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_47MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][7].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_47);
     }//GEN-LAST:event_jLabel60_47MouseClicked
 
     private void jLabel60_48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_48MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][8].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_48);
     }//GEN-LAST:event_jLabel60_48MouseClicked
 
     private void jLabel60_49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_49MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[4][9].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_49);
     }//GEN-LAST:event_jLabel60_49MouseClicked
 
     private void jLabel60_50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_50MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][0].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_50);
     }//GEN-LAST:event_jLabel60_50MouseClicked
 
     private void jLabel60_51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_51MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][1].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_51);
     }//GEN-LAST:event_jLabel60_51MouseClicked
 
     private void jLabel60_52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_52MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][2].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_52);
     }//GEN-LAST:event_jLabel60_52MouseClicked
 
     private void jLabel60_53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_53MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][3].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_53);
     }//GEN-LAST:event_jLabel60_53MouseClicked
 
     private void jLabel60_54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_54MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][4].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_54);
     }//GEN-LAST:event_jLabel60_54MouseClicked
 
     private void jLabel60_55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_55MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][5].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_55);
     }//GEN-LAST:event_jLabel60_55MouseClicked
 
     private void jLabel60_56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_56MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][6].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_56);
     }//GEN-LAST:event_jLabel60_56MouseClicked
 
     private void jLabel60_57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_57MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][7].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_57);
     }//GEN-LAST:event_jLabel60_57MouseClicked
 
     private void jLabel60_58MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_58MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][8].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_58);
     }//GEN-LAST:event_jLabel60_58MouseClicked
 
     private void jLabel60_59MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_59MouseClicked
+        if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[5][9].getValor()){
+            jugadasCorrectas++;
+        }
+        else{
+            jugadasIncorrectas++;
+        }}
         actualizaCelda(jLabel60_59);
     }//GEN-LAST:event_jLabel60_59MouseClicked
 
     private void jButtonSolucionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSolucionActionPerformed
-        //el jugador ha pedido ayuda
-        ayudas = true;
+        //el jugador ha pedido que lo resuelva la máquina
+        resueltoMaquina = true;
         
         int valor;
         for(int i=0;i<tableroSolucion.getFilas();i++){
@@ -1856,6 +2277,7 @@ public class HourMaze extends javax.swing.JFrame {
         
         //el jugador ha pedido ayuda
         ayudas = true;
+        peticionesAyuda++;
         
         //se busca la primera celda no resuelta, bien porque esté vacía o porque tenga un valor incorrecto
         //una vez encontrada la celda se marca como resuelta y se muestra la solución
@@ -2170,7 +2592,8 @@ public class HourMaze extends javax.swing.JFrame {
     private int tam;
     private String valorPulsado;
     private int[] valoresUsados;
-    private boolean ayudas;
+    private boolean ayudas, resueltoMaquina;
+    private int jugadasCorrectas, jugadasIncorrectas, peticionesAyuda;
     
     
     
@@ -2291,8 +2714,12 @@ public class HourMaze extends javax.swing.JFrame {
         jButtonSolucion.setEnabled(false);
         jButtonResuelveCelda.setEnabled(false);
         ayudas = false;
+        resueltoMaquina = false;
         muestraAyuda(false);
         valoresUsados = new int[12];
+        jugadasCorrectas = 0;
+        jugadasIncorrectas = 0;
+        peticionesAyuda = 0;
         
         prepararTableroGUI(60);
     }
@@ -2360,6 +2787,10 @@ public class HourMaze extends javax.swing.JFrame {
         actualizaValoresUsadosGUI();
         jLabelAyudaUsos.setText("Debes usar cada valor " + tam/12 + " veces");      
         ayudas = false;
+        resueltoMaquina = false;
+        peticionesAyuda = 0;
+        jugadasCorrectas = 0;
+        jugadasIncorrectas = 0;
     }
 
     private void actualizaValoresUsadosGUI() {
@@ -2444,11 +2875,19 @@ public class HourMaze extends javax.swing.JFrame {
         
         if(resuelto){
             String mensaje;
-            if(ayudas){
-                mensaje = "¡Enhorabuena!\nHas necesitado un poco de ayuda, pero lo has resuelto.";
+            if(resueltoMaquina){
+                mensaje = "Tablero resuelto por la máquina";
+            }
+            else if(ayudas){
+                mensaje = "¡Enhorabuena!\nHas necesitado un poco de ayuda, pero lo has resuelto.\n";
+                mensaje = mensaje + "Jugadas Correctas: " + jugadasCorrectas + "\n";
+                mensaje = mensaje + "Jugadas Incorrectas: " + jugadasIncorrectas + "\n";
+                mensaje = mensaje + "Peticiones de ayuda: " + peticionesAyuda;
             }
             else{
-                mensaje = "¡Genial!\nHas resuelto el tablero sin ninguna ayuda.";
+                mensaje = "¡Genial!\nHas resuelto el tablero sin ninguna ayuda.\n";
+                mensaje = mensaje + "Jugadas Correctas: " + jugadasCorrectas + "\n";
+                mensaje = mensaje + "Jugadas Incorrectas: " + jugadasIncorrectas;
             } 
             JOptionPane.showMessageDialog(this, mensaje);
         }    

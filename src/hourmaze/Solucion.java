@@ -199,7 +199,6 @@ public class Solucion {
         fijaValor(t, tableroInicial, tableroAuxiliar, true);
         System.out.print("Tablero inicial: \n");
         t.imprimeTablero();
-        //resuelveTablero(tableroAuxiliar);
         
         resuelto = false;
         while(!resuelto){
@@ -209,12 +208,11 @@ public class Solucion {
             if(!resuelto){
                 //fijamos un valor más
                 valoresAdicionales++;
-                System.out.print("fijamos un valor más \n");
                 fijaValor(t, tableroInicial, tableroAuxiliar, false);
             }
         }
-        
-        System.out.print("total de valores adicionales: " + valoresAdicionales + "\n");
+
+        System.out.println("total de valores adicionales: " + valoresAdicionales);
         
         return tableroInicial;
     }
@@ -232,6 +230,7 @@ public class Solucion {
         Celda[][] tablero = t.getTablero();
         boolean progreso = true;
         Celda celdaActual;
+        
         
         //**comienzo del proceso de inicialización**
         
@@ -417,7 +416,6 @@ public class Solucion {
             }
         }
         //**fin del bucle principal**
-        
         return (celdasPorResolver == 0);
     }
     
@@ -483,7 +481,7 @@ public class Solucion {
         if(flag){
             switch(tSolucion.getTam()){
             case 24:
-                numValoresIniciales = 3;
+                numValoresIniciales = 2;
                 break;
             case 36:
                 numValoresIniciales = 5;
@@ -492,7 +490,7 @@ public class Solucion {
                 numValoresIniciales = 7;
                 break;
             case 60:
-                numValoresIniciales = 9;
+                numValoresIniciales = 10;
                 break;
             }     
         }
