@@ -272,7 +272,6 @@ public class HourMaze extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
 
         jPanelTablero.setPreferredSize(new java.awt.Dimension(700, 450));
         jPanelTablero.setLayout(new java.awt.GridLayout(6, 10));
@@ -1294,7 +1293,7 @@ public class HourMaze extends javax.swing.JFrame {
         jBasePanelLayout.setHorizontalGroup(
             jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jBasePanelLayout.createSequentialGroup()
-                .addGap(171, 171, 171)
+                .addContainerGap(171, Short.MAX_VALUE)
                 .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jBasePanelLayout.createSequentialGroup()
                         .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -1321,9 +1320,7 @@ public class HourMaze extends javax.swing.JFrame {
                                         .addComponent(jToggleButton7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jToggleButton8))
-                                    .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabelUsos8)
-                                        .addComponent(jLabelAyudaUsos))))
+                                    .addComponent(jLabelAyudaUsos)))
                             .addGroup(jBasePanelLayout.createSequentialGroup()
                                 .addGap(91, 91, 91)
                                 .addComponent(jButtonResuelveCelda)
@@ -1362,7 +1359,9 @@ public class HourMaze extends javax.swing.JFrame {
                         .addComponent(jLabelUsos6)
                         .addGap(43, 43, 43)
                         .addComponent(jLabelUsos7)
-                        .addGap(93, 93, 93)
+                        .addGap(47, 47, 47)
+                        .addComponent(jLabelUsos8)
+                        .addGap(40, 40, 40)
                         .addComponent(jLabelUsos9)
                         .addGap(45, 45, 45)
                         .addComponent(jLabelUsos10)
@@ -1383,7 +1382,7 @@ public class HourMaze extends javax.swing.JFrame {
                     .addComponent(jButtonSolucion, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonGenera, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonVerFallos, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addComponent(jLabelAyudaUsos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1415,9 +1414,9 @@ public class HourMaze extends javax.swing.JFrame {
                     .addComponent(jToggleButton11)
                     .addComponent(jToggleButton12)
                     .addComponent(jToggleButtonBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addComponent(jPanelTablero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addComponent(jPanelTablero, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         HourMazeMenu.setText("Hour Maze");
@@ -1500,7 +1499,7 @@ public class HourMaze extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 773, Short.MAX_VALUE)
+            .addGap(0, 710, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jBasePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -1978,7 +1977,7 @@ public class HourMaze extends javax.swing.JFrame {
 
     private void jLabel60_35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel60_35MouseClicked
         if(!valorPulsado.isEmpty() && !((JLabel)evt.getSource()).getBackground().equals(java.awt.Color.LIGHT_GRAY)){
-        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][4].getValor()){
+        if(Integer.parseInt(valorPulsado) == tableroSolucion.getTablero()[3][5].getValor()){
             jugadasCorrectas++;
         }
         else{
@@ -2310,6 +2309,7 @@ public class HourMaze extends javax.swing.JFrame {
 
     private void jMenuActivarAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuActivarAyudaActionPerformed
         ayudas = true;
+        peticionesAyuda++;
         muestraAyuda(true);
     }//GEN-LAST:event_jMenuActivarAyudaActionPerformed
 
@@ -2413,6 +2413,7 @@ public class HourMaze extends javax.swing.JFrame {
 
     private void jButtonVerFallosMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonVerFallosMouseReleased
         if(tableroInicial != null){
+            peticionesAyuda++;
         for(int i=0;i<tableroInicial.getFilas();i++){
             for(int j=0;j<tableroInicial.getCol();j++){
                 if(tableroGUI[i][j].getBackground().equals(new java.awt.Color(255, 140, 140))){
