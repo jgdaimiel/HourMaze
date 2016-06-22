@@ -20,7 +20,7 @@ public class Solucion {
     */
     public static void creaSolucion(Tablero t){
         int[] valoresAsignables = new int[t.getTam()];
-        ArrayList<String> direcciones = new ArrayList();
+        ArrayList<String> direcciones = new ArrayList<String>();
         int indice;
         boolean atascado;
         Random r = new Random();
@@ -467,7 +467,7 @@ public class Solucion {
         Celda[][] tabInicial = tInicial.getTablero();
         Celda[][] tabAuxiliar = tAuxiliar.getTablero();
         Random random = new Random();
-        ArrayList<Coordenada> arrayCoordenadas = new ArrayList();
+        ArrayList<Coordenada> arrayCoordenadas = new ArrayList<Coordenada>();
         int numValoresIniciales = 1;
         int r, fila, columna;
         

@@ -28,7 +28,7 @@ public class Celda {
         this.muroArriba = false;
         this.muroDerecha = false;
         this.muroIzquierda = false;
-        valoresPosibles = new HashSet();
+        valoresPosibles = new HashSet<Integer>();
     }
     
     public Celda(int valor, HashSet<Integer> valoresPosibles, boolean muroDerecha, boolean muroIzquierda, boolean muroArriba, boolean muroAbajo) {
